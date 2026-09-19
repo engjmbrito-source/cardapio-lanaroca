@@ -1103,7 +1103,11 @@
       const r = await fetch("./dados.json", { cache: "no-store" });
       const dados = await r.json();
 
-      const aberto = !!dados.aceitar_pedido_online;
+      // Verde/aberto só quando o link público (túnel) está de fato no ar —
+      // não quando o botão "aceitar pedido online" está ligado. São coisas
+      // diferentes: o link é gerado/derrubado manualmente (INICIAR-CARDAPIO-PUBLICO
+      // ou o fechamento de caixa), e é isso que decide se dá pra pedir de verdade.
+      const aberto = !!dados.link_publico_ativo;
       document.getElementById("statusIndicatorBadge").textContent = aberto ? "● ABERTO" : "● FECHADO";
       document.getElementById("statusIndicatorBadge").style.background = aberto ? "#16a34a" : "#dc2626";
       document.getElementById("closedBanner").style.display = aberto ? "none" : "flex";
