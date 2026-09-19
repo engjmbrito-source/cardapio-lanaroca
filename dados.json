@@ -1,0 +1,1081 @@
+{
+  "nome_fantasia": "Lá na Roça",
+  "whatsapp_pedidos": "5584991290653",
+  "aceitar_pedido_online": true,
+  "categorias": [
+    {
+      "id": 43,
+      "nome": "Bebidas",
+      "ativo": true,
+      "limite_acrescimos": null,
+      "itens": [
+        {
+          "id": 52,
+          "nome": "Burrinha Caranguejo Prata (275 ml)",
+          "categoria": "Bebidas",
+          "tipo_venda": "unidade",
+          "preco": 10.0,
+          "descricao": "",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 53,
+          "nome": "Burrinha Pitú (275 ml)",
+          "categoria": "Bebidas",
+          "tipo_venda": "unidade",
+          "preco": 12.0,
+          "descricao": "",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 57,
+          "nome": "Cerveja Budweiser (600 ml)",
+          "categoria": "Bebidas",
+          "tipo_venda": "unidade",
+          "preco": 12.0,
+          "descricao": "",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 56,
+          "nome": "Cerveja Skol ou Brahma (600 ml)",
+          "categoria": "Bebidas",
+          "tipo_venda": "unidade",
+          "preco": 10.0,
+          "descricao": "",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 136,
+          "nome": "Dose Ballantine’s (Whisky)",
+          "categoria": "Bebidas",
+          "tipo_venda": "unidade",
+          "preco": 10.0,
+          "descricao": "",
+          "ativo": 0,
+          "imagem_url": ""
+        },
+        {
+          "id": 54,
+          "nome": "Drink Alcoólico (400 ml)",
+          "categoria": "Bebidas",
+          "tipo_venda": "unidade",
+          "preco": 12.0,
+          "descricao": "Sabores variados, como morango e maracujá.",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 50,
+          "nome": "H2OH! Limoneto",
+          "categoria": "Bebidas",
+          "tipo_venda": "unidade",
+          "preco": 8.0,
+          "descricao": "",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 51,
+          "nome": "Refrigerante 1 L (Coca-Cola ou Guaraná)",
+          "categoria": "Bebidas",
+          "tipo_venda": "unidade",
+          "preco": 12.0,
+          "descricao": "",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 49,
+          "nome": "Refrigerante em Lata",
+          "categoria": "Bebidas",
+          "tipo_venda": "unidade",
+          "preco": 6.0,
+          "descricao": "Consulte as opções disponíveis.",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 43,
+          "nome": "Suco — Copo 200 ml",
+          "categoria": "Bebidas",
+          "tipo_venda": "unidade",
+          "preco": 8.0,
+          "descricao": "Preparado com o sabor disponível no dia. Consulte as opções.",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 44,
+          "nome": "Suco — Jarra 500 ml",
+          "categoria": "Bebidas",
+          "tipo_venda": "unidade",
+          "preco": 16.0,
+          "descricao": "Preparado com o sabor disponível no dia. Consulte as opções.",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 45,
+          "nome": "Vitamina — Copo 200 ml",
+          "categoria": "Bebidas",
+          "tipo_venda": "unidade",
+          "preco": 10.0,
+          "descricao": "Fruta batida com leite em pó. Consulte os sabores disponíveis.",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 46,
+          "nome": "Vitamina — Jarra 500 ml",
+          "categoria": "Bebidas",
+          "tipo_venda": "unidade",
+          "preco": 20.0,
+          "descricao": "Fruta batida com leite em pó. Consulte os sabores disponíveis.",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 47,
+          "nome": "Água Mineral (500 ml)",
+          "categoria": "Bebidas",
+          "tipo_venda": "unidade",
+          "preco": 4.0,
+          "descricao": "",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 48,
+          "nome": "Água com Gás (500 ml)",
+          "categoria": "Bebidas",
+          "tipo_venda": "unidade",
+          "preco": 6.0,
+          "descricao": "",
+          "ativo": 1,
+          "imagem_url": ""
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "nome": "Entradas e Petiscos",
+      "ativo": true,
+      "limite_acrescimos": null,
+      "itens": [
+        {
+          "id": 4,
+          "nome": "Batata Frita M (500 g)",
+          "categoria": "Entradas e Petiscos",
+          "tipo_venda": "unidade",
+          "preco": 25.0,
+          "descricao": "Porção de 500 g de batata frita, acompanhada de molho rosé.",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 3,
+          "nome": "Batata Frita P (300 g)",
+          "categoria": "Entradas e Petiscos",
+          "tipo_venda": "unidade",
+          "preco": 15.0,
+          "descricao": "Porção de 300 g de batata frita, acompanhada de molho rosé.",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 2,
+          "nome": "Pão de Alho",
+          "categoria": "Entradas e Petiscos",
+          "tipo_venda": "unidade",
+          "preco": 6.0,
+          "descricao": "Pão preparado na air fryer com creme de alho e queijo.",
+          "ativo": 1,
+          "imagem_url": ""
+        }
+      ]
+    },
+    {
+      "id": 185,
+      "nome": "Hambúrgueres Artesanais",
+      "ativo": true,
+      "limite_acrescimos": null,
+      "itens": [
+        {
+          "id": 210,
+          "nome": "+ Bacon",
+          "categoria": "Hambúrgueres Artesanais",
+          "tipo_venda": "unidade",
+          "preco": 2.0,
+          "descricao": "",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 211,
+          "nome": "+ Barbecue",
+          "categoria": "Hambúrgueres Artesanais",
+          "tipo_venda": "unidade",
+          "preco": 2.0,
+          "descricao": "",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 208,
+          "nome": "+ Carne Bovina Artesanal (120 g)",
+          "categoria": "Hambúrgueres Artesanais",
+          "tipo_venda": "unidade",
+          "preco": 5.0,
+          "descricao": "",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 209,
+          "nome": "+ Carne Industrializada (80 g)",
+          "categoria": "Hambúrgueres Artesanais",
+          "tipo_venda": "unidade",
+          "preco": 2.5,
+          "descricao": "",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 207,
+          "nome": "+ Carne Suína Artesanal (120 g)",
+          "categoria": "Hambúrgueres Artesanais",
+          "tipo_venda": "unidade",
+          "preco": 4.0,
+          "descricao": "",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 221,
+          "nome": "+ Carne na nata (100 g)",
+          "categoria": "Hambúrgueres Artesanais",
+          "tipo_venda": "unidade",
+          "preco": 7.0,
+          "descricao": "",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 212,
+          "nome": "+ Catupiry",
+          "categoria": "Hambúrgueres Artesanais",
+          "tipo_venda": "unidade",
+          "preco": 2.0,
+          "descricao": "",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 213,
+          "nome": "+ Cebola caramelizada",
+          "categoria": "Hambúrgueres Artesanais",
+          "tipo_venda": "unidade",
+          "preco": 2.0,
+          "descricao": "",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 214,
+          "nome": "+ Cebola crua",
+          "categoria": "Hambúrgueres Artesanais",
+          "tipo_venda": "unidade",
+          "preco": 2.0,
+          "descricao": "",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 215,
+          "nome": "+ Frango",
+          "categoria": "Hambúrgueres Artesanais",
+          "tipo_venda": "unidade",
+          "preco": 2.0,
+          "descricao": "",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 216,
+          "nome": "+ Ovo",
+          "categoria": "Hambúrgueres Artesanais",
+          "tipo_venda": "unidade",
+          "preco": 2.0,
+          "descricao": "",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 217,
+          "nome": "+ Presunto",
+          "categoria": "Hambúrgueres Artesanais",
+          "tipo_venda": "unidade",
+          "preco": 2.0,
+          "descricao": "",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 218,
+          "nome": "+ Salada",
+          "categoria": "Hambúrgueres Artesanais",
+          "tipo_venda": "unidade",
+          "preco": 2.0,
+          "descricao": "",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 219,
+          "nome": "+ Salsicha",
+          "categoria": "Hambúrgueres Artesanais",
+          "tipo_venda": "unidade",
+          "preco": 2.0,
+          "descricao": "",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 220,
+          "nome": "+ Tomate grelhado",
+          "categoria": "Hambúrgueres Artesanais",
+          "tipo_venda": "unidade",
+          "preco": 2.0,
+          "descricao": "",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 225,
+          "nome": "Bugír",
+          "categoria": "Hambúrgueres Artesanais",
+          "tipo_venda": "unidade",
+          "preco": 15.0,
+          "descricao": "Pão, hambúrguer suíno artesanal de 120 g, Creme de Queijo, cream cheese e cebola caramelizada.",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 231,
+          "nome": "Buraco de Joab",
+          "categoria": "Hambúrgueres Artesanais",
+          "tipo_venda": "unidade",
+          "preco": 19.0,
+          "descricao": "Pão, hambúrguer suíno artesanal de 120 g, Creme de Queijo, bacon, molho barbecue e cebola caramelizada.",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 226,
+          "nome": "Cabra da Peste",
+          "categoria": "Hambúrgueres Artesanais",
+          "tipo_venda": "unidade",
+          "preco": 22.0,
+          "descricao": "Pão, carne na nata (carne de 100 g preparada na nata), Creme de Queijo, bacon, alface, tomate e cebola caramelizada.",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 232,
+          "nome": "Cachoeira da Briba",
+          "categoria": "Hambúrgueres Artesanais",
+          "tipo_venda": "unidade",
+          "preco": 20.0,
+          "descricao": "Pão, hambúrguer bovino artesanal de 120 g, Creme de Queijo, cream cheese e tomate grelhado.",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 228,
+          "nome": "Cacimba Véa",
+          "categoria": "Hambúrgueres Artesanais",
+          "tipo_venda": "unidade",
+          "preco": 26.0,
+          "descricao": "Pão, carne na nata + hambúrguer suíno artesanal de 120 g, Creme de Queijo, bacon, cream cheese, tomate grelhado e cebola caramelizada.",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 230,
+          "nome": "Lagoa Escondida",
+          "categoria": "Hambúrgueres Artesanais",
+          "tipo_venda": "unidade",
+          "preco": 25.0,
+          "descricao": "Pão, 2 hambúrgueres bovinos artesanais de 120 g, Creme de Queijo duplo, bacon crocante e cream cheese.",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 233,
+          "nome": "Logradouro",
+          "categoria": "Hambúrgueres Artesanais",
+          "tipo_venda": "unidade",
+          "preco": 20.0,
+          "descricao": "Pão, hambúrguer bovino artesanal de 120 g, Creme de Queijo, bacon, cream cheese, cebola caramelizada e molho barbecue.",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 227,
+          "nome": "Olho d'Água",
+          "categoria": "Hambúrgueres Artesanais",
+          "tipo_venda": "unidade",
+          "preco": 27.0,
+          "descricao": "Pão, carne na nata + hambúrguer bovino artesanal de 120 g, Creme de Queijo, bacon crocante e cebola caramelizada.",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 234,
+          "nome": "Passagem Molhada",
+          "categoria": "Hambúrgueres Artesanais",
+          "tipo_venda": "unidade",
+          "preco": 19.0,
+          "descricao": "Pão, hambúrguer suíno artesanal de 120 g, Creme de Queijo, bacon crocante, cream cheese e tomate grelhado.",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 235,
+          "nome": "Pinturas Rupestres",
+          "categoria": "Hambúrgueres Artesanais",
+          "tipo_venda": "unidade",
+          "preco": 20.0,
+          "descricao": "Pão, hambúrguer bovino artesanal de 120 g, Creme de Queijo, bacon, molho barbecue e cebola caramelizada.",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 236,
+          "nome": "Tanque Salão",
+          "categoria": "Hambúrgueres Artesanais",
+          "tipo_venda": "unidade",
+          "preco": 19.0,
+          "descricao": "Pão, hambúrguer suíno artesanal de 120 g, Creme de Queijo, bacon crocante, cream cheese e cebola caramelizada.",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 237,
+          "nome": "Tanque da Rua",
+          "categoria": "Hambúrgueres Artesanais",
+          "tipo_venda": "unidade",
+          "preco": 20.0,
+          "descricao": "Pão, hambúrguer bovino artesanal de 120 g, Creme de Queijo, bacon, cream cheese e cebola caramelizada.",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 229,
+          "nome": "Três Panelinhas",
+          "categoria": "Hambúrgueres Artesanais",
+          "tipo_venda": "unidade",
+          "preco": 24.0,
+          "descricao": "Pão, hambúrguer suíno artesanal de 120 g + hambúrguer bovino artesanal de 120 g, Creme de Queijo, bacon, cream cheese, molho barbecue e cebola caramelizada.",
+          "ativo": 1,
+          "imagem_url": ""
+        }
+      ]
+    },
+    {
+      "id": 168,
+      "nome": "Hambúrgueres Simples",
+      "ativo": true,
+      "limite_acrescimos": null,
+      "itens": [
+        {
+          "id": 190,
+          "nome": "+ Bacon",
+          "categoria": "Hambúrgueres Simples",
+          "tipo_venda": "unidade",
+          "preco": 2.0,
+          "descricao": "",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 191,
+          "nome": "+ Barbecue",
+          "categoria": "Hambúrgueres Simples",
+          "tipo_venda": "unidade",
+          "preco": 2.0,
+          "descricao": "",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 201,
+          "nome": "+ Carne na nata (100 g)",
+          "categoria": "Hambúrgueres Simples",
+          "tipo_venda": "unidade",
+          "preco": 7.0,
+          "descricao": "",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 192,
+          "nome": "+ Catupiry",
+          "categoria": "Hambúrgueres Simples",
+          "tipo_venda": "unidade",
+          "preco": 2.0,
+          "descricao": "",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 193,
+          "nome": "+ Cebola caramelizada",
+          "categoria": "Hambúrgueres Simples",
+          "tipo_venda": "unidade",
+          "preco": 2.0,
+          "descricao": "",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 194,
+          "nome": "+ Cebola crua",
+          "categoria": "Hambúrgueres Simples",
+          "tipo_venda": "unidade",
+          "preco": 2.0,
+          "descricao": "",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 195,
+          "nome": "+ Frango",
+          "categoria": "Hambúrgueres Simples",
+          "tipo_venda": "unidade",
+          "preco": 2.0,
+          "descricao": "",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 196,
+          "nome": "+ Ovo",
+          "categoria": "Hambúrgueres Simples",
+          "tipo_venda": "unidade",
+          "preco": 2.0,
+          "descricao": "",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 197,
+          "nome": "+ Presunto",
+          "categoria": "Hambúrgueres Simples",
+          "tipo_venda": "unidade",
+          "preco": 2.0,
+          "descricao": "",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 198,
+          "nome": "+ Salada",
+          "categoria": "Hambúrgueres Simples",
+          "tipo_venda": "unidade",
+          "preco": 2.0,
+          "descricao": "",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 199,
+          "nome": "+ Salsicha",
+          "categoria": "Hambúrgueres Simples",
+          "tipo_venda": "unidade",
+          "preco": 2.0,
+          "descricao": "",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 200,
+          "nome": "+ Tomate grelhado",
+          "categoria": "Hambúrgueres Simples",
+          "tipo_venda": "unidade",
+          "preco": 2.0,
+          "descricao": "",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 203,
+          "nome": "Bacurau",
+          "categoria": "Hambúrgueres Simples",
+          "tipo_venda": "unidade",
+          "preco": 13.0,
+          "descricao": "Pão, hambúrguer Industrializado 80g, frango, bacon, presunto, creme de queijo, alface, tomate e cebola caramelizada.",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 202,
+          "nome": "Caatinga",
+          "categoria": "Hambúrgueres Simples",
+          "tipo_venda": "unidade",
+          "preco": 12.0,
+          "descricao": "Pão, hambúrguer Industrializado 80g, creme de queijo, presunto, ovo, alface, tomate e cebola caramelizada.",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 204,
+          "nome": "Maria Bonita",
+          "categoria": "Hambúrgueres Simples",
+          "tipo_venda": "unidade",
+          "preco": 22.0,
+          "descricao": "Pão, dois hambúrgueres industrializado 80 g, creme de queijo, bacon, molho barbecue, tomate grelhado e cebola caramelizada. (Sem alface)",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 205,
+          "nome": "Matuto",
+          "categoria": "Hambúrgueres Simples",
+          "tipo_venda": "unidade",
+          "preco": 10.0,
+          "descricao": "Pão, hambúrguer Industrializado 80g, creme de queijo, alface, tomate e cebola caramelizada.",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 206,
+          "nome": "Terreirão",
+          "categoria": "Hambúrgueres Simples",
+          "tipo_venda": "unidade",
+          "preco": 18.0,
+          "descricao": "Pão, hambúrguer Industrializado 80g, frango, presunto, ovo, bacon, calabresa, catupiry, creme de queijo, alface, tomate e cebola caramelizada.",
+          "ativo": 1,
+          "imagem_url": ""
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "nome": "Pastelão",
+      "ativo": true,
+      "limite_acrescimos": null,
+      "itens": [
+        {
+          "id": 35,
+          "nome": "+ Borda de Catupiry",
+          "categoria": "Pastelão",
+          "tipo_venda": "unidade",
+          "preco": 5.0,
+          "descricao": "",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 36,
+          "nome": "+ Borda de Chocolate",
+          "categoria": "Pastelão",
+          "tipo_venda": "unidade",
+          "preco": 6.0,
+          "descricao": "",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 105,
+          "nome": "+ Catupiry",
+          "categoria": "Pastelão",
+          "tipo_venda": "unidade",
+          "preco": 2.0,
+          "descricao": "",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 177,
+          "nome": "Arretado",
+          "categoria": "Pastelão",
+          "tipo_venda": "unidade",
+          "preco": 12.0,
+          "descricao": "Recheio de calabresa e queijo.",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 178,
+          "nome": "Asa Branca",
+          "categoria": "Pastelão",
+          "tipo_venda": "unidade",
+          "preco": 12.0,
+          "descricao": "Recheio de frango, queijo e presunto.",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 179,
+          "nome": "Bucho Cheio",
+          "categoria": "Pastelão",
+          "tipo_venda": "unidade",
+          "preco": 18.0,
+          "descricao": "Recheio de presunto, calabresa, queijo, carne e frango.",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 180,
+          "nome": "Caipira",
+          "categoria": "Pastelão",
+          "tipo_venda": "unidade",
+          "preco": 12.0,
+          "descricao": "Recheio de frango e queijo.",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 181,
+          "nome": "Cangaço",
+          "categoria": "Pastelão",
+          "tipo_venda": "unidade",
+          "preco": 13.0,
+          "descricao": "Recheio de carne, queijo e calabresa.",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 182,
+          "nome": "Espoleta",
+          "categoria": "Pastelão",
+          "tipo_venda": "unidade",
+          "preco": 13.0,
+          "descricao": "Recheio de frango, queijo e calabresa.",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 183,
+          "nome": "Papoco",
+          "categoria": "Pastelão",
+          "tipo_venda": "unidade",
+          "preco": 12.0,
+          "descricao": "Recheio de presunto, queijo e calabresa.",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 184,
+          "nome": "Popular",
+          "categoria": "Pastelão",
+          "tipo_venda": "unidade",
+          "preco": 11.0,
+          "descricao": "Recheio de presunto e queijo.",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 185,
+          "nome": "Sertanejo",
+          "categoria": "Pastelão",
+          "tipo_venda": "unidade",
+          "preco": 12.0,
+          "descricao": "Recheio de carne e queijo.",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 186,
+          "nome": "Tapera",
+          "categoria": "Pastelão",
+          "tipo_venda": "unidade",
+          "preco": 10.0,
+          "descricao": "Recheio de queijo.",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 187,
+          "nome": "Tempero do Sertão",
+          "categoria": "Pastelão",
+          "tipo_venda": "unidade",
+          "preco": 17.0,
+          "descricao": "Recheio de carne na nata.",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 188,
+          "nome": "Terreiro e Pasto",
+          "categoria": "Pastelão",
+          "tipo_venda": "unidade",
+          "preco": 14.0,
+          "descricao": "Recheio de carne, queijo e frango.",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 189,
+          "nome": "Tropeiro",
+          "categoria": "Pastelão",
+          "tipo_venda": "unidade",
+          "preco": 13.0,
+          "descricao": "Recheio de carne, queijo e presunto.",
+          "ativo": 1,
+          "imagem_url": ""
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "nome": "Self-service",
+      "ativo": true,
+      "limite_acrescimos": null,
+      "itens": [
+        {
+          "id": 1,
+          "nome": "Self-service por peso",
+          "categoria": "Self-service",
+          "tipo_venda": "peso",
+          "preco": 69.99,
+          "descricao": "Monte seu prato do seu jeito e aproveite o sabor da roça! Servido por peso, com preço variável — consulte o valor do dia.",
+          "ativo": 1,
+          "imagem_url": ""
+        }
+      ]
+    },
+    {
+      "id": 58,
+      "nome": "Sobremesas",
+      "ativo": true,
+      "limite_acrescimos": null,
+      "itens": [
+        {
+          "id": 62,
+          "nome": "Milk-shake Oxente de Chocolate",
+          "categoria": "Sobremesas",
+          "tipo_venda": "unidade",
+          "preco": 15.0,
+          "descricao": "Sorvete de chocolate batido com leite gelado, finalizado com chocolate, chantilly, calda, granulado e creme de avelã com cacau.",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 63,
+          "nome": "Milk-shake Oxente de Flocos",
+          "categoria": "Sobremesas",
+          "tipo_venda": "unidade",
+          "preco": 15.0,
+          "descricao": "Sorvete de flocos batido com leite gelado, finalizado com chocolate, chantilly, calda, granulado e creme de avelã com cacau.",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 61,
+          "nome": "Milk-shake Oxente de Morango",
+          "categoria": "Sobremesas",
+          "tipo_venda": "unidade",
+          "preco": 15.0,
+          "descricao": "Sorvete de morango batido com leite gelado, finalizado com chocolate, chantilly, calda, granulado e creme de avelã com cacau.",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 158,
+          "nome": "Milk-shake Pedra do Índio de Chocolate",
+          "categoria": "Sobremesas",
+          "tipo_venda": "unidade",
+          "preco": 20.0,
+          "descricao": "Sorvete de chocolate batido com leite gelado, finalizado com chocolate, chantilly, calda, granulado, creme de avelã com cacau e um picolé de casquinha.",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 159,
+          "nome": "Milk-shake Pedra do Índio de Flocos",
+          "categoria": "Sobremesas",
+          "tipo_venda": "unidade",
+          "preco": 20.0,
+          "descricao": "Sorvete de flocos batido com leite gelado, finalizado com chocolate, chantilly, calda, granulado, creme de avelã com cacau e um picolé de casquinha.",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 160,
+          "nome": "Milk-shake Pedra do Índio de Morango",
+          "categoria": "Sobremesas",
+          "tipo_venda": "unidade",
+          "preco": 20.0,
+          "descricao": "Sorvete de morango batido com leite gelado, finalizado com chocolate, chantilly, calda, granulado, creme de avelã com cacau e um picolé de casquinha.",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 59,
+          "nome": "Milk-shake de Chocolate do Sertão",
+          "categoria": "Sobremesas",
+          "tipo_venda": "unidade",
+          "preco": 12.0,
+          "descricao": "Sorvete de chocolate batido com leite gelado, finalizado com chantilly, calda e granulado.",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 60,
+          "nome": "Milk-shake de Flocos do Sertão",
+          "categoria": "Sobremesas",
+          "tipo_venda": "unidade",
+          "preco": 12.0,
+          "descricao": "Sorvete de flocos batido com leite gelado, finalizado com chantilly, calda e granulado.",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 58,
+          "nome": "Milk-shake de Morango do Sertão",
+          "categoria": "Sobremesas",
+          "tipo_venda": "unidade",
+          "preco": 12.0,
+          "descricao": "Sorvete de morango batido com leite gelado, finalizado com chantilly, calda e granulado.",
+          "ativo": 1,
+          "imagem_url": ""
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "nome": "Pizzas",
+      "ativo": true,
+      "limite_acrescimos": 2,
+      "itens": [
+        {
+          "id": 354,
+          "nome": "+ Calabresa",
+          "categoria": "Pizzas",
+          "tipo_venda": "unidade",
+          "preco": 0.0,
+          "descricao": "muçarela, calabresa, cebola",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 353,
+          "nome": "+ Frango com Catupiry",
+          "categoria": "Pizzas",
+          "tipo_venda": "unidade",
+          "preco": 0.0,
+          "descricao": "muçarela, frango, catupiry",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 356,
+          "nome": "+ Moda da Casa",
+          "categoria": "Pizzas",
+          "tipo_venda": "unidade",
+          "preco": 0.0,
+          "descricao": "muçarela, calabresa, presunto, carne de sol, cebola, frango",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 352,
+          "nome": "+ Nordestina",
+          "categoria": "Pizzas",
+          "tipo_venda": "unidade",
+          "preco": 0.0,
+          "descricao": "muçarela, carne de sol, ovo, cebola",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 351,
+          "nome": "+ Portuguesa",
+          "categoria": "Pizzas",
+          "tipo_venda": "unidade",
+          "preco": 0.0,
+          "descricao": "muçarela, presunto, ovo, cebola",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 355,
+          "nome": "+ Sertaneja",
+          "categoria": "Pizzas",
+          "tipo_venda": "unidade",
+          "preco": 0.0,
+          "descricao": "muçarela, carne de sol, catupiry",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 42,
+          "nome": "Pizza G com borda",
+          "categoria": "Pizzas",
+          "tipo_venda": "unidade",
+          "preco": 48.0,
+          "descricao": "Sabores: Portuguesa (muçarela, presunto, ovo, cebola) · Nordestina (muçarela, carne de sol, ovo, cebola) · Frango com Catupiry (muçarela, frango, catupiry) · Calabresa (muçarela, calabresa, cebola) · Sertaneja (muçarela, carne de sol, catupiry) · Moda da Casa (muçarela, calabresa, presunto, carne de sol, cebola, frango). Pode ser meio a meio.",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 41,
+          "nome": "Pizza G sem borda",
+          "categoria": "Pizzas",
+          "tipo_venda": "unidade",
+          "preco": 43.0,
+          "descricao": "Sabores: Portuguesa (muçarela, presunto, ovo, cebola) · Nordestina (muçarela, carne de sol, ovo, cebola) · Frango com Catupiry (muçarela, frango, catupiry) · Calabresa (muçarela, calabresa, cebola) · Sertaneja (muçarela, carne de sol, catupiry) · Moda da Casa (muçarela, calabresa, presunto, carne de sol, cebola, frango). Pode ser meio a meio.",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 40,
+          "nome": "Pizza M com borda",
+          "categoria": "Pizzas",
+          "tipo_venda": "unidade",
+          "preco": 37.0,
+          "descricao": "Sabores: Portuguesa (muçarela, presunto, ovo, cebola) · Nordestina (muçarela, carne de sol, ovo, cebola) · Frango com Catupiry (muçarela, frango, catupiry) · Calabresa (muçarela, calabresa, cebola) · Sertaneja (muçarela, carne de sol, catupiry) · Moda da Casa (muçarela, calabresa, presunto, carne de sol, cebola, frango). Pode ser meio a meio.",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 39,
+          "nome": "Pizza M sem borda",
+          "categoria": "Pizzas",
+          "tipo_venda": "unidade",
+          "preco": 32.0,
+          "descricao": "Sabores: Portuguesa (muçarela, presunto, ovo, cebola) · Nordestina (muçarela, carne de sol, ovo, cebola) · Frango com Catupiry (muçarela, frango, catupiry) · Calabresa (muçarela, calabresa, cebola) · Sertaneja (muçarela, carne de sol, catupiry) · Moda da Casa (muçarela, calabresa, presunto, carne de sol, cebola, frango). Pode ser meio a meio.",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 38,
+          "nome": "Pizza P com borda",
+          "categoria": "Pizzas",
+          "tipo_venda": "unidade",
+          "preco": 27.0,
+          "descricao": "Sabores: Portuguesa (muçarela, presunto, ovo, cebola) · Nordestina (muçarela, carne de sol, ovo, cebola) · Frango com Catupiry (muçarela, frango, catupiry) · Calabresa (muçarela, calabresa, cebola) · Sertaneja (muçarela, carne de sol, catupiry) · Moda da Casa (muçarela, calabresa, presunto, carne de sol, cebola, frango). Pode ser meio a meio.",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 37,
+          "nome": "Pizza P sem borda",
+          "categoria": "Pizzas",
+          "tipo_venda": "unidade",
+          "preco": 25.0,
+          "descricao": "Sabores: Portuguesa (muçarela, presunto, ovo, cebola) · Nordestina (muçarela, carne de sol, ovo, cebola) · Frango com Catupiry (muçarela, frango, catupiry) · Calabresa (muçarela, calabresa, cebola) · Sertaneja (muçarela, carne de sol, catupiry) · Moda da Casa (muçarela, calabresa, presunto, carne de sol, cebola, frango). Pode ser meio a meio.",
+          "ativo": 1,
+          "imagem_url": ""
+        }
+      ]
+    }
+  ]
+}
