@@ -941,6 +941,33 @@
       letter-spacing: 0.3px;
     }
     /* Faixa discreta e permanente lembrando que é só consulta */
+    /* Balão flutuante de pedido: segue a rolagem, some com a loja fechada */
+    .balao-pedido {
+      position: fixed;
+      right: 16px;
+      bottom: calc(18px + env(safe-area-inset-bottom, 0px));
+      z-index: 60;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 14px 22px;
+      border-radius: 999px;
+      background: #ea580c;
+      color: #fff;
+      font-weight: 800;
+      font-size: 1.05rem;
+      text-decoration: none;
+      box-shadow: 0 6px 20px rgba(234, 88, 12, 0.45);
+      animation: balaoPulso 2.4s ease-in-out infinite;
+    }
+    .balao-pedido[hidden] { display: none; }
+    .balao-pedido:active { transform: scale(0.97); }
+    .balao-pedido-icone { font-size: 1.3rem; line-height: 1; }
+    @keyframes balaoPulso {
+      0%, 100% { box-shadow: 0 6px 20px rgba(234, 88, 12, 0.45); }
+      50% { box-shadow: 0 6px 28px rgba(234, 88, 12, 0.75); }
+    }
+    @media (prefers-reduced-motion: reduce) { .balao-pedido { animation: none; } }
     .consulta-banner {
       position: sticky;
       top: 0;
@@ -1052,15 +1079,12 @@
   <!-- 5. Cards de Itens (somente visualização) -->
   <main class="items-grid" id="itemsGrid"></main>
 
-  <!-- 6. Botão flutuante único: Pedir no WhatsApp -->
-  <div class="floating-actions">
-    <span id="pedirLabel" class="float-wpp-label">Pedir no WhatsApp</span>
-    <a id="btnPedirWhatsapp" href="#" target="_blank" rel="noopener noreferrer" class="float-btn float-wpp" title="Pedir no WhatsApp" aria-label="Pedir no WhatsApp">
-      <svg viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
-        <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
-      </svg>
-    </a>
-  </div>
+  <!-- 6. Balão flutuante "Fazer pedido": só existe com a loja aberta e o link
+       de pedidos do dia no ar. Acompanha a página (position: fixed). -->
+  <a id="btnFazerPedido" class="balao-pedido" href="#" hidden aria-label="Fazer pedido pelo site">
+    <span class="balao-pedido-icone" aria-hidden="true">🛵</span>
+    <span>Fazer pedido</span>
+  </a>
 
   <!-- Modal: Explicação (aparece ao abrir) -->
   <div class="modal-backdrop active" id="modalConsulta">
@@ -1108,48 +1132,50 @@
       // desligado sem "Encerrar" (ou a publicação falhasse), ficava ABERTO pra
       // sempre. Agora começa FECHADO e só vira ABERTO depois de conferir que o
       // link de pedidos do dia responde de verdade (carrega a logo por ele).
-      const numero = (dados.whatsapp_pedidos || "").replace(/\D/g, "");
-      const btn = document.getElementById("btnPedirWhatsapp");
-      const label = document.getElementById("pedirLabel");
-      const linkPedido = /^https:\/\//.test(dados.link_publico_url || "") ? dados.link_publico_url.replace(/\/+$/, "") : "";
+      const balao = document.getElementById("btnFazerPedido");
+      // O PDV publica o endereço-base do túnel; a raiz dele dá 404 no modo público.
+      // O cardápio de pedidos mora em /cardapio — o balão vai sempre pra lá.
+      let origemPdv = "", linkPedido = "";
+      try {
+        const u = new URL(dados.link_publico_url || "");
+        if (u.protocol === "https:") {
+          origemPdv = u.origin;
+          linkPedido = u.origin + (u.pathname.replace(/\/+$/, "").endsWith("/cardapio") ? u.pathname.replace(/\/+$/, "") : "/cardapio");
+        }
+      } catch (e) { /* sem link publicado: fica fechado */ }
 
       function mostrarFechado() {
         document.getElementById("statusIndicatorBadge").textContent = "● FECHADO";
         document.getElementById("statusIndicatorBadge").style.background = "#dc2626";
         document.getElementById("closedBanner").style.display = "flex";
-        btn.href = "javascript:void(0)";
-        btn.classList.add("pedir-fechado");
-        label.textContent = "Fechado no momento";
-        label.classList.add("fechado");
+        balao.hidden = true;
+        balao.removeAttribute("href");
       }
       function mostrarAberto() {
         document.getElementById("statusIndicatorBadge").textContent = "● ABERTO";
         document.getElementById("statusIndicatorBadge").style.background = "#16a34a";
         document.getElementById("closedBanner").style.display = "none";
-        btn.href = linkPedido;
-        btn.removeAttribute("target");
-        btn.classList.remove("pedir-fechado");
-        label.textContent = "Fazer pedido agora";
-        label.classList.remove("fechado");
-        document.getElementById("consultaBanner").textContent = "🛵 Estamos abertos! Toque em \"Fazer pedido agora\" para pedir pelo site";
+        balao.href = linkPedido;
+        balao.hidden = false;
+        document.getElementById("consultaBanner").textContent = "🛵 Estamos abertos! Toque em \"Fazer pedido\" para pedir pelo site";
         document.getElementById("modalConsultaTitulo").textContent = "🛵 Estamos abertos!";
-        document.getElementById("modalConsultaCorpo").innerHTML = '<p style="margin:0;">Dá uma olhada no cardápio e, quando quiser, toque em <strong>"Fazer pedido agora"</strong> para montar seu pedido direto pelo site. 😊</p>';
+        document.getElementById("modalConsultaCorpo").innerHTML = '<p style="margin:0;">Dá uma olhada no cardápio e, quando quiser, toque em <strong>"Fazer pedido"</strong> — o botão laranja fica sempre no canto da tela. 😊</p>';
         const pedirModal = document.getElementById("modalConsultaPedir");
         pedirModal.href = linkPedido;
         pedirModal.style.display = "block";
       }
-      function linkNoAr(url) {
+      function linkNoAr(origem) {
         return new Promise(resolve => {
           const img = new Image();
           const t = setTimeout(() => { img.src = ""; resolve(false); }, 6000);
           img.onload = () => { clearTimeout(t); resolve(true); };
           img.onerror = () => { clearTimeout(t); resolve(false); };
-          img.src = url + "/api/identidade/logo?v=" + Date.now();
+          img.src = origem + "/api/identidade/logo?v=" + Date.now();
         });
       }
       mostrarFechado();
       if (dados.link_publico_ativo && linkPedido) {
-        linkNoAr(linkPedido).then(ok => { if (ok) mostrarAberto(); });
+        linkNoAr(origemPdv).then(ok => { if (ok) mostrarAberto(); });
       }
 
       MENU_DATA = (dados.categorias || [])

@@ -1081,6 +1081,6 @@
       ]
     }
   ],
-  "link_publico_ativo": true,
-  "link_publico_url": "https://services-dennis-thereafter-obj.trycloudflare.com"
+  "link_publico_ativo": false,
+  "link_publico_url": ""
 }
