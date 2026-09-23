@@ -980,7 +980,7 @@
 <body>
 
   <!-- Faixa fixa: sempre visível rolando a página -->
-  <div class="consulta-banner">
+  <div class="consulta-banner" id="consultaBanner">
     📋 Cardápio apenas para consulta — para pedir, use o botão de WhatsApp aqui embaixo
   </div>
 
@@ -1066,13 +1066,14 @@
   <div class="modal-backdrop active" id="modalConsulta">
     <div class="modal-box">
       <div class="modal-header">
-        <h3 class="modal-title">📋 Cardápio de consulta</h3>
+        <h3 class="modal-title" id="modalConsultaTitulo">📋 Cardápio de consulta</h3>
       </div>
-      <div class="modal-body">
+      <div class="modal-body" id="modalConsultaCorpo">
         <p style="margin:0 0 10px;">Este cardápio é <strong>apenas para você olhar</strong> os pratos, descrições e preços — não é possível fechar pedido por aqui.</p>
         <p style="margin:0;">Se quiser pedir alguma coisa, role a página até o final e toque no botão verde <strong>"Pedir no WhatsApp"</strong>. Vamos te mandar o link certinho para fazer o pedido por lá. 😊</p>
       </div>
-      <div class="modal-footer">
+      <div class="modal-footer" style="display:flex; flex-direction:column; gap:8px;">
+        <a id="modalConsultaPedir" class="btn" href="#" style="display:none; text-align:center; text-decoration:none; background:#ea580c; color:#fff; border:none; padding:10px 20px; border-radius:8px; font-weight:700; width:100%; box-sizing:border-box;">🛵 Fazer pedido agora</a>
         <button class="btn" style="background:#16a34a; color:#fff; border:none; padding:10px 20px; border-radius:8px; font-weight:700; width:100%;" onclick="fecharModalConsulta()">Entendi, ver o cardápio</button>
       </div>
     </div>
@@ -1126,6 +1127,13 @@
         btn.classList.remove("pedir-fechado");
         label.textContent = "Fazer pedido agora";
         label.classList.remove("fechado");
+        // Loja aberta com pedido pelo site: os avisos de "só consulta" deixam de valer.
+        document.getElementById("consultaBanner").textContent = "🛵 Estamos abertos! Toque em \"Fazer pedido agora\" para pedir pelo site";
+        document.getElementById("modalConsultaTitulo").textContent = "🛵 Estamos abertos!";
+        document.getElementById("modalConsultaCorpo").innerHTML = '<p style="margin:0;">Dá uma olhada no cardápio e, quando quiser, toque em <strong>"Fazer pedido agora"</strong> para montar seu pedido direto pelo site. 😊</p>';
+        const pedirModal = document.getElementById("modalConsultaPedir");
+        pedirModal.href = linkPedido;
+        pedirModal.style.display = "block";
       } else if (aberto) {
         btn.href = `https://wa.me/${numero}?text=${msg}`;
         btn.classList.remove("pedir-fechado");
