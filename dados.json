@@ -1,7 +1,10 @@
 {
   "nome_fantasia": "Lá na Roça",
   "whatsapp_pedidos": "5584991290653",
-  "aceitar_pedido_online": true,
+  "aceitar_pedido_online": false,
+  "aberto": false,
+  "aceitando_pedidos": false,
+  "caixa_aberto": true,
   "categorias": [
     {
       "id": 43,
@@ -1078,5 +1081,6 @@
       ]
     }
   ],
-  "link_publico_ativo": true
+  "link_publico_ativo": true,
+  "link_publico_url": "https://services-dennis-thereafter-obj.trycloudflare.com"
 }
