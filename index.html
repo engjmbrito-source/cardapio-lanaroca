@@ -1116,7 +1116,17 @@
       const msg = encodeURIComponent("Olá! Vi o cardápio de consulta do Lá na Roça e quero fazer um pedido. Pode me passar o link para pedir? 😊");
       const btn = document.getElementById("btnPedirWhatsapp");
       const label = document.getElementById("pedirLabel");
-      if (aberto) {
+      // Cardápio único: com a loja aberta, o PDV publica aqui o endereço do
+      // cardápio de PEDIDOS (link_publico_url). Este link fixo do GitHub vira a
+      // porta de entrada: consulta sempre, e um toque leva ao pedido de verdade.
+      const linkPedido = /^https:\/\//.test(dados.link_publico_url || "") ? dados.link_publico_url : "";
+      if (aberto && linkPedido) {
+        btn.href = linkPedido;
+        btn.removeAttribute("target");
+        btn.classList.remove("pedir-fechado");
+        label.textContent = "Fazer pedido agora";
+        label.classList.remove("fechado");
+      } else if (aberto) {
         btn.href = `https://wa.me/${numero}?text=${msg}`;
         btn.classList.remove("pedir-fechado");
         label.textContent = "Pedir no WhatsApp";
