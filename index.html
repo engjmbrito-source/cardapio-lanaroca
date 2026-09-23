@@ -1008,7 +1008,7 @@
 
   <!-- Faixa fixa: sempre visível rolando a página -->
   <div class="consulta-banner" id="consultaBanner">
-    📋 Cardápio apenas para consulta — para pedir, use o botão de WhatsApp aqui embaixo
+    📋 Cardápio de consulta — no momento estamos fechados
   </div>
 
   <!-- 1. Header do Logo com Cenário Nordestino Cartoon -->
@@ -1094,7 +1094,7 @@
       </div>
       <div class="modal-body" id="modalConsultaCorpo">
         <p style="margin:0 0 10px;">Este cardápio é <strong>apenas para você olhar</strong> os pratos, descrições e preços — não é possível fechar pedido por aqui.</p>
-        <p style="margin:0;">Se quiser pedir alguma coisa, role a página até o final e toque no botão verde <strong>"Pedir no WhatsApp"</strong>. Vamos te mandar o link certinho para fazer o pedido por lá. 😊</p>
+        <p style="margin:0;">Quando estivermos abertos, aparece no canto da tela o botão laranja <strong>"🛵 Fazer pedido"</strong> para você pedir direto pelo site. 😊</p>
       </div>
       <div class="modal-footer" style="display:flex; flex-direction:column; gap:8px;">
         <a id="modalConsultaPedir" class="btn" href="#" style="display:none; text-align:center; text-decoration:none; background:#ea580c; color:#fff; border:none; padding:10px 20px; border-radius:8px; font-weight:700; width:100%; box-sizing:border-box;">🛵 Fazer pedido agora</a>
@@ -1124,59 +1124,83 @@
     let MENU_DATA = [];
     let currentCategoryIndex = 0;
 
+    // ---------------------------------------------------------------- STATUS
+    // Um só status para os dois cardápios: o PDV publica aqui o link do dia e se
+    // a loja está aberta (link no ar + caixa aberto). A página confere de novo
+    // ao vivo (a logo precisa carregar pelo link) e repete a cada 30 s, então
+    // quem deixou o cardápio aberto vê abrir/fechar sem recarregar.
+    let statusAtual = null;
+    function linkDoDia(dados) {
+      try {
+        const u = new URL(dados.link_publico_url || "");
+        if (u.protocol !== "https:") return null;
+        const caminho = u.pathname.replace(/\/+$/, "");
+        // A raiz do túnel dá 404 no modo público; o cardápio de pedidos mora em /cardapio.
+        return { origem: u.origin, pedido: u.origin + (caminho.endsWith("/cardapio") ? caminho : "/cardapio") };
+      } catch (e) { return null; }
+    }
+    function linkNoAr(origem) {
+      return new Promise(resolve => {
+        const img = new Image();
+        const t = setTimeout(() => { img.src = ""; resolve(false); }, 6000);
+        img.onload = () => { clearTimeout(t); resolve(true); };
+        img.onerror = () => { clearTimeout(t); resolve(false); };
+        img.src = origem + "/api/identidade/logo?v=" + Date.now();
+      });
+    }
+    function mostrarFechado() {
+      statusAtual = "fechado";
+      document.getElementById("statusIndicatorBadge").textContent = "● FECHADO";
+      document.getElementById("statusIndicatorBadge").style.background = "#dc2626";
+      document.getElementById("closedBanner").style.display = "flex";
+      const balao = document.getElementById("btnFazerPedido");
+      balao.hidden = true;
+      balao.removeAttribute("href");
+      document.getElementById("modalConsultaPedir").style.display = "none";
+      document.getElementById("consultaBanner").textContent = "📋 Cardápio de consulta — no momento estamos fechados";
+    }
+    function mostrarAberto(linkPedido) {
+      statusAtual = "aberto:" + linkPedido;
+      document.getElementById("statusIndicatorBadge").textContent = "● ABERTO";
+      document.getElementById("statusIndicatorBadge").style.background = "#16a34a";
+      document.getElementById("closedBanner").style.display = "none";
+      const balao = document.getElementById("btnFazerPedido");
+      balao.href = linkPedido;
+      balao.hidden = false;
+      document.getElementById("consultaBanner").textContent = "🛵 Estamos abertos! Toque em \"Fazer pedido\" para pedir pelo site";
+      document.getElementById("modalConsultaTitulo").textContent = "🛵 Estamos abertos!";
+      document.getElementById("modalConsultaCorpo").innerHTML = '<p style="margin:0;">Dá uma olhada no cardápio e, quando quiser, toque em <strong>"Fazer pedido"</strong> — o botão laranja fica sempre no canto da tela. 😊</p>';
+      const pedirModal = document.getElementById("modalConsultaPedir");
+      pedirModal.href = linkPedido;
+      pedirModal.style.display = "block";
+    }
+    async function aplicarStatus(dados, primeiraVez) {
+      if (primeiraVez) mostrarFechado();           // nunca mostra ABERTO sem conferir
+      const link = linkDoDia(dados);
+      const liberado = !!dados.link_publico_ativo && !!link && dados.aberto !== false;
+      const aberto = liberado && await linkNoAr(link.origem);
+      const novo = aberto ? "aberto:" + link.pedido : "fechado";
+      if (novo === statusAtual) return;
+      if (aberto) mostrarAberto(link.pedido); else mostrarFechado();
+    }
+    async function reconferirStatus() {
+      try {
+        const r = await fetch("./dados.json?t=" + Date.now(), { cache: "no-store" });
+        await aplicarStatus(await r.json(), false);
+      } catch (e) { /* sem internet: mantém o último status */ }
+    }
+    setInterval(reconferirStatus, 30000);
+    document.addEventListener("visibilitychange", () => { if (!document.hidden) reconferirStatus(); });
+
     async function carregarDados() {
-      const r = await fetch("./dados.json", { cache: "no-store" });
+      const r = await fetch("./dados.json?t=" + Date.now(), { cache: "no-store" });
       const dados = await r.json();
 
       // Status AO VIVO. Antes a página confiava só no dados.json: se o PC fosse
       // desligado sem "Encerrar" (ou a publicação falhasse), ficava ABERTO pra
       // sempre. Agora começa FECHADO e só vira ABERTO depois de conferir que o
       // link de pedidos do dia responde de verdade (carrega a logo por ele).
-      const balao = document.getElementById("btnFazerPedido");
-      // O PDV publica o endereço-base do túnel; a raiz dele dá 404 no modo público.
-      // O cardápio de pedidos mora em /cardapio — o balão vai sempre pra lá.
-      let origemPdv = "", linkPedido = "";
-      try {
-        const u = new URL(dados.link_publico_url || "");
-        if (u.protocol === "https:") {
-          origemPdv = u.origin;
-          linkPedido = u.origin + (u.pathname.replace(/\/+$/, "").endsWith("/cardapio") ? u.pathname.replace(/\/+$/, "") : "/cardapio");
-        }
-      } catch (e) { /* sem link publicado: fica fechado */ }
-
-      function mostrarFechado() {
-        document.getElementById("statusIndicatorBadge").textContent = "● FECHADO";
-        document.getElementById("statusIndicatorBadge").style.background = "#dc2626";
-        document.getElementById("closedBanner").style.display = "flex";
-        balao.hidden = true;
-        balao.removeAttribute("href");
-      }
-      function mostrarAberto() {
-        document.getElementById("statusIndicatorBadge").textContent = "● ABERTO";
-        document.getElementById("statusIndicatorBadge").style.background = "#16a34a";
-        document.getElementById("closedBanner").style.display = "none";
-        balao.href = linkPedido;
-        balao.hidden = false;
-        document.getElementById("consultaBanner").textContent = "🛵 Estamos abertos! Toque em \"Fazer pedido\" para pedir pelo site";
-        document.getElementById("modalConsultaTitulo").textContent = "🛵 Estamos abertos!";
-        document.getElementById("modalConsultaCorpo").innerHTML = '<p style="margin:0;">Dá uma olhada no cardápio e, quando quiser, toque em <strong>"Fazer pedido"</strong> — o botão laranja fica sempre no canto da tela. 😊</p>';
-        const pedirModal = document.getElementById("modalConsultaPedir");
-        pedirModal.href = linkPedido;
-        pedirModal.style.display = "block";
-      }
-      function linkNoAr(origem) {
-        return new Promise(resolve => {
-          const img = new Image();
-          const t = setTimeout(() => { img.src = ""; resolve(false); }, 6000);
-          img.onload = () => { clearTimeout(t); resolve(true); };
-          img.onerror = () => { clearTimeout(t); resolve(false); };
-          img.src = origem + "/api/identidade/logo?v=" + Date.now();
-        });
-      }
-      mostrarFechado();
-      if (dados.link_publico_ativo && linkPedido) {
-        linkNoAr(origemPdv).then(ok => { if (ok) mostrarAberto(); });
-      }
+      aplicarStatus(dados, true);
 
       MENU_DATA = (dados.categorias || [])
         .map(cat => {
