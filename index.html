@@ -1104,46 +1104,52 @@
       const r = await fetch("./dados.json", { cache: "no-store" });
       const dados = await r.json();
 
-      // Verde/aberto só quando o link público (túnel) está de fato no ar —
-      // não quando o botão "aceitar pedido online" está ligado. São coisas
-      // diferentes: o link é gerado/derrubado manualmente (INICIAR-CARDAPIO-PUBLICO
-      // ou o fechamento de caixa), e é isso que decide se dá pra pedir de verdade.
-      const aberto = !!dados.link_publico_ativo;
-      document.getElementById("statusIndicatorBadge").textContent = aberto ? "● ABERTO" : "● FECHADO";
-      document.getElementById("statusIndicatorBadge").style.background = aberto ? "#16a34a" : "#dc2626";
-      document.getElementById("closedBanner").style.display = aberto ? "none" : "flex";
-
+      // Status AO VIVO. Antes a página confiava só no dados.json: se o PC fosse
+      // desligado sem "Encerrar" (ou a publicação falhasse), ficava ABERTO pra
+      // sempre. Agora começa FECHADO e só vira ABERTO depois de conferir que o
+      // link de pedidos do dia responde de verdade (carrega a logo por ele).
       const numero = (dados.whatsapp_pedidos || "").replace(/\D/g, "");
-      const msg = encodeURIComponent("Olá! Vi o cardápio de consulta do Lá na Roça e quero fazer um pedido. Pode me passar o link para pedir? 😊");
       const btn = document.getElementById("btnPedirWhatsapp");
       const label = document.getElementById("pedirLabel");
-      // Cardápio único: com a loja aberta, o PDV publica aqui o endereço do
-      // cardápio de PEDIDOS (link_publico_url). Este link fixo do GitHub vira a
-      // porta de entrada: consulta sempre, e um toque leva ao pedido de verdade.
-      const linkPedido = /^https:\/\//.test(dados.link_publico_url || "") ? dados.link_publico_url : "";
-      if (aberto && linkPedido) {
+      const linkPedido = /^https:\/\//.test(dados.link_publico_url || "") ? dados.link_publico_url.replace(/\/+$/, "") : "";
+
+      function mostrarFechado() {
+        document.getElementById("statusIndicatorBadge").textContent = "● FECHADO";
+        document.getElementById("statusIndicatorBadge").style.background = "#dc2626";
+        document.getElementById("closedBanner").style.display = "flex";
+        btn.href = "javascript:void(0)";
+        btn.classList.add("pedir-fechado");
+        label.textContent = "Fechado no momento";
+        label.classList.add("fechado");
+      }
+      function mostrarAberto() {
+        document.getElementById("statusIndicatorBadge").textContent = "● ABERTO";
+        document.getElementById("statusIndicatorBadge").style.background = "#16a34a";
+        document.getElementById("closedBanner").style.display = "none";
         btn.href = linkPedido;
         btn.removeAttribute("target");
         btn.classList.remove("pedir-fechado");
         label.textContent = "Fazer pedido agora";
         label.classList.remove("fechado");
-        // Loja aberta com pedido pelo site: os avisos de "só consulta" deixam de valer.
         document.getElementById("consultaBanner").textContent = "🛵 Estamos abertos! Toque em \"Fazer pedido agora\" para pedir pelo site";
         document.getElementById("modalConsultaTitulo").textContent = "🛵 Estamos abertos!";
         document.getElementById("modalConsultaCorpo").innerHTML = '<p style="margin:0;">Dá uma olhada no cardápio e, quando quiser, toque em <strong>"Fazer pedido agora"</strong> para montar seu pedido direto pelo site. 😊</p>';
         const pedirModal = document.getElementById("modalConsultaPedir");
         pedirModal.href = linkPedido;
         pedirModal.style.display = "block";
-      } else if (aberto) {
-        btn.href = `https://wa.me/${numero}?text=${msg}`;
-        btn.classList.remove("pedir-fechado");
-        label.textContent = "Pedir no WhatsApp";
-        label.classList.remove("fechado");
-      } else {
-        btn.href = "javascript:void(0)";
-        btn.classList.add("pedir-fechado");
-        label.textContent = "Fechado no momento";
-        label.classList.add("fechado");
+      }
+      function linkNoAr(url) {
+        return new Promise(resolve => {
+          const img = new Image();
+          const t = setTimeout(() => { img.src = ""; resolve(false); }, 6000);
+          img.onload = () => { clearTimeout(t); resolve(true); };
+          img.onerror = () => { clearTimeout(t); resolve(false); };
+          img.src = url + "/api/identidade/logo?v=" + Date.now();
+        });
+      }
+      mostrarFechado();
+      if (dados.link_publico_ativo && linkPedido) {
+        linkNoAr(linkPedido).then(ok => { if (ok) mostrarAberto(); });
       }
 
       MENU_DATA = (dados.categorias || [])
