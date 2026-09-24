@@ -1,9 +1,9 @@
 {
   "nome_fantasia": "Lá na Roça",
   "whatsapp_pedidos": "5584991290653",
-  "aceitar_pedido_online": true,
-  "aberto": true,
-  "aceitando_pedidos": true,
+  "aceitar_pedido_online": false,
+  "aberto": false,
+  "aceitando_pedidos": false,
   "caixa_aberto": true,
   "categorias": [
     {
@@ -1081,6 +1081,6 @@
       ]
     }
   ],
-  "link_publico_ativo": true,
-  "link_publico_url": "https://hosts-representative-hurricane-walnut.trycloudflare.com"
+  "link_publico_ativo": false,
+  "link_publico_url": ""
 }
