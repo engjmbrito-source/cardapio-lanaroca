@@ -69,7 +69,7 @@
           "tipo_venda": "unidade",
           "preco": 12.0,
           "descricao": "Sabores variados, como morango e maracujá.",
-          "ativo": 0,
+          "ativo": 1,
           "imagem_url": ""
         },
         {
@@ -1082,5 +1082,5 @@
     }
   ],
   "link_publico_ativo": true,
-  "link_publico_url": "https://mobility-lisa-preference-cio.trycloudflare.com"
+  "link_publico_url": "https://acne-utc-joy-salad.trycloudflare.com"
 }
