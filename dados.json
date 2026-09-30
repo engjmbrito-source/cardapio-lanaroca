@@ -4,7 +4,7 @@
   "aceitar_pedido_online": false,
   "aberto": false,
   "aceitando_pedidos": false,
-  "caixa_aberto": false,
+  "caixa_aberto": true,
   "categorias": [
     {
       "id": 43,
