@@ -2,9 +2,9 @@
   "nome_fantasia": "Lá na Roça",
   "whatsapp_pedidos": "5584991290653",
   "aceitar_pedido_online": true,
-  "aberto": false,
+  "aberto": true,
   "aceitando_pedidos": true,
-  "caixa_aberto": false,
+  "caixa_aberto": true,
   "categorias": [
     {
       "id": 43,
