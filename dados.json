@@ -1,9 +1,9 @@
 {
   "nome_fantasia": "Lá na Roça",
   "whatsapp_pedidos": "5584991290653",
-  "aceitar_pedido_online": false,
+  "aceitar_pedido_online": true,
   "aberto": false,
-  "aceitando_pedidos": false,
+  "aceitando_pedidos": true,
   "caixa_aberto": false,
   "categorias": [
     {
@@ -1081,6 +1081,6 @@
       ]
     }
   ],
-  "link_publico_ativo": false,
-  "link_publico_url": ""
+  "link_publico_ativo": true,
+  "link_publico_url": "https://vincent-situated-inter-strict.trycloudflare.com"
 }
