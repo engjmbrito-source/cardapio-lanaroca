@@ -1,9 +1,9 @@
 {
   "nome_fantasia": "Lá na Roça",
   "whatsapp_pedidos": "5584991290653",
-  "aceitar_pedido_online": true,
-  "aberto": true,
-  "aceitando_pedidos": true,
+  "aceitar_pedido_online": false,
+  "aberto": false,
+  "aceitando_pedidos": false,
   "caixa_aberto": true,
   "categorias": [
     {
@@ -839,7 +839,7 @@
     {
       "id": 1,
       "nome": "Self-service",
-      "ativo": false,
+      "ativo": true,
       "limite_acrescimos": null,
       "itens": [
         {
@@ -955,7 +955,7 @@
     {
       "id": 37,
       "nome": "Pizzas",
-      "ativo": false,
+      "ativo": true,
       "limite_acrescimos": 2,
       "itens": [
         {
@@ -1025,7 +1025,7 @@
           "tipo_venda": "unidade",
           "preco": 48.0,
           "descricao": "Sabores: Portuguesa (muçarela, presunto, ovo, cebola) · Nordestina (muçarela, carne de sol, ovo, cebola) · Frango com Catupiry (muçarela, frango, catupiry) · Calabresa (muçarela, calabresa, cebola) · Sertaneja (muçarela, carne de sol, catupiry) · Moda da Casa (muçarela, calabresa, presunto, carne de sol, cebola, frango). Pode ser meio a meio.",
-          "ativo": 1,
+          "ativo": 0,
           "imagem_url": ""
         },
         {
@@ -1035,7 +1035,7 @@
           "tipo_venda": "unidade",
           "preco": 43.0,
           "descricao": "Sabores: Portuguesa (muçarela, presunto, ovo, cebola) · Nordestina (muçarela, carne de sol, ovo, cebola) · Frango com Catupiry (muçarela, frango, catupiry) · Calabresa (muçarela, calabresa, cebola) · Sertaneja (muçarela, carne de sol, catupiry) · Moda da Casa (muçarela, calabresa, presunto, carne de sol, cebola, frango). Pode ser meio a meio.",
-          "ativo": 1,
+          "ativo": 0,
           "imagem_url": ""
         },
         {
@@ -1045,7 +1045,7 @@
           "tipo_venda": "unidade",
           "preco": 37.0,
           "descricao": "Sabores: Portuguesa (muçarela, presunto, ovo, cebola) · Nordestina (muçarela, carne de sol, ovo, cebola) · Frango com Catupiry (muçarela, frango, catupiry) · Calabresa (muçarela, calabresa, cebola) · Sertaneja (muçarela, carne de sol, catupiry) · Moda da Casa (muçarela, calabresa, presunto, carne de sol, cebola, frango). Pode ser meio a meio.",
-          "ativo": 1,
+          "ativo": 0,
           "imagem_url": ""
         },
         {
@@ -1055,7 +1055,7 @@
           "tipo_venda": "unidade",
           "preco": 32.0,
           "descricao": "Sabores: Portuguesa (muçarela, presunto, ovo, cebola) · Nordestina (muçarela, carne de sol, ovo, cebola) · Frango com Catupiry (muçarela, frango, catupiry) · Calabresa (muçarela, calabresa, cebola) · Sertaneja (muçarela, carne de sol, catupiry) · Moda da Casa (muçarela, calabresa, presunto, carne de sol, cebola, frango). Pode ser meio a meio.",
-          "ativo": 1,
+          "ativo": 0,
           "imagem_url": ""
         },
         {
@@ -1081,6 +1081,6 @@
       ]
     }
   ],
-  "link_publico_ativo": true,
-  "link_publico_url": "https://disclosure-invitations-contract-leisure.trycloudflare.com"
+  "link_publico_ativo": false,
+  "link_publico_url": ""
 }
