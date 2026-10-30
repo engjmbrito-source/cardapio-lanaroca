@@ -1,10 +1,11 @@
 {
   "nome_fantasia": "Lá na Roça",
   "whatsapp_pedidos": "5584991290653",
-  "aceitar_pedido_online": false,
-  "aberto": false,
-  "aceitando_pedidos": false,
+  "aceitar_pedido_online": true,
+  "aberto": true,
+  "aceitando_pedidos": true,
   "caixa_aberto": true,
+  "delivery_ativo": true,
   "categorias": [
     {
       "id": 43,
@@ -78,6 +79,16 @@
           "categoria": "Bebidas",
           "tipo_venda": "unidade",
           "preco": 8.0,
+          "descricao": "",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 359,
+          "nome": "LATA PROMOCAO",
+          "categoria": "Bebidas",
+          "tipo_venda": "unidade",
+          "preco": 4.0,
           "descricao": "",
           "ativo": 1,
           "imagem_url": ""
@@ -209,6 +220,16 @@
       "limite_acrescimos": null,
       "itens": [
         {
+          "id": 361,
+          "nome": "+ BATATA",
+          "categoria": "Hambúrgueres Artesanais",
+          "tipo_venda": "unidade",
+          "preco": 0.0,
+          "descricao": "",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
           "id": 210,
           "nome": "+ Bacon",
           "categoria": "Hambúrgueres Artesanais",
@@ -324,6 +345,16 @@
           "categoria": "Hambúrgueres Artesanais",
           "tipo_venda": "unidade",
           "preco": 2.0,
+          "descricao": "",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 362,
+          "nome": "+ REFRI LATA",
+          "categoria": "Hambúrgueres Artesanais",
+          "tipo_venda": "unidade",
+          "preco": 4.0,
           "descricao": "",
           "ativo": 1,
           "imagem_url": ""
@@ -849,7 +880,7 @@
           "tipo_venda": "peso",
           "preco": 69.99,
           "descricao": "Monte seu prato do seu jeito e aproveite o sabor da roça! Servido por peso, com preço variável — consulte o valor do dia.",
-          "ativo": 1,
+          "ativo": 0,
           "imagem_url": ""
         }
       ]
@@ -1025,7 +1056,7 @@
           "tipo_venda": "unidade",
           "preco": 48.0,
           "descricao": "Sabores: Portuguesa (muçarela, presunto, ovo, cebola) · Nordestina (muçarela, carne de sol, ovo, cebola) · Frango com Catupiry (muçarela, frango, catupiry) · Calabresa (muçarela, calabresa, cebola) · Sertaneja (muçarela, carne de sol, catupiry) · Moda da Casa (muçarela, calabresa, presunto, carne de sol, cebola, frango). Pode ser meio a meio.",
-          "ativo": 0,
+          "ativo": 1,
           "imagem_url": ""
         },
         {
@@ -1035,7 +1066,7 @@
           "tipo_venda": "unidade",
           "preco": 43.0,
           "descricao": "Sabores: Portuguesa (muçarela, presunto, ovo, cebola) · Nordestina (muçarela, carne de sol, ovo, cebola) · Frango com Catupiry (muçarela, frango, catupiry) · Calabresa (muçarela, calabresa, cebola) · Sertaneja (muçarela, carne de sol, catupiry) · Moda da Casa (muçarela, calabresa, presunto, carne de sol, cebola, frango). Pode ser meio a meio.",
-          "ativo": 0,
+          "ativo": 1,
           "imagem_url": ""
         },
         {
@@ -1045,7 +1076,7 @@
           "tipo_venda": "unidade",
           "preco": 37.0,
           "descricao": "Sabores: Portuguesa (muçarela, presunto, ovo, cebola) · Nordestina (muçarela, carne de sol, ovo, cebola) · Frango com Catupiry (muçarela, frango, catupiry) · Calabresa (muçarela, calabresa, cebola) · Sertaneja (muçarela, carne de sol, catupiry) · Moda da Casa (muçarela, calabresa, presunto, carne de sol, cebola, frango). Pode ser meio a meio.",
-          "ativo": 0,
+          "ativo": 1,
           "imagem_url": ""
         },
         {
@@ -1055,7 +1086,7 @@
           "tipo_venda": "unidade",
           "preco": 32.0,
           "descricao": "Sabores: Portuguesa (muçarela, presunto, ovo, cebola) · Nordestina (muçarela, carne de sol, ovo, cebola) · Frango com Catupiry (muçarela, frango, catupiry) · Calabresa (muçarela, calabresa, cebola) · Sertaneja (muçarela, carne de sol, catupiry) · Moda da Casa (muçarela, calabresa, presunto, carne de sol, cebola, frango). Pode ser meio a meio.",
-          "ativo": 0,
+          "ativo": 1,
           "imagem_url": ""
         },
         {
@@ -1079,8 +1110,46 @@
           "imagem_url": ""
         }
       ]
+    },
+    {
+      "id": 335,
+      "nome": "PROMOÇÃO",
+      "ativo": true,
+      "limite_acrescimos": null,
+      "itens": [
+        {
+          "id": 358,
+          "nome": "HAMBURGUER ARTESANAL + BATATA FRITA",
+          "categoria": "PROMOÇÃO",
+          "tipo_venda": "unidade",
+          "preco": 0.0,
+          "descricao": "ESCOLHA O HAMBURGUER NA ABA DE  HAMBURGUER ARTESANAL, E ADICIONE A BATATA COMO ADICIONAL",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 360,
+          "nome": "HAMBURGUER ARTESANAL + REFRI LATA",
+          "categoria": "PROMOÇÃO",
+          "tipo_venda": "unidade",
+          "preco": 0.0,
+          "descricao": "PEÇA PELA ABA DOS HAMBURGUERES ARTESANAIS, E COLOQUE O REFRIGERANTE COMO ACRESCIMO",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 357,
+          "nome": "PIZZA G + REFRIGERANTE",
+          "categoria": "PROMOÇÃO",
+          "tipo_venda": "unidade",
+          "preco": 45.0,
+          "descricao": "PIZZA G = SABOR MODA DA CASA+ REFRIGERANTE DE 1 LITRO (DESCREVA O SABOR NA OBSERVAÇÃO)",
+          "ativo": 1,
+          "imagem_url": ""
+        }
+      ]
     }
   ],
-  "link_publico_ativo": false,
-  "link_publico_url": ""
+  "link_publico_ativo": true,
+  "link_publico_url": "https://warriors-bull-forums-integration.trycloudflare.com"
 }
