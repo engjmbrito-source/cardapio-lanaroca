@@ -2,9 +2,9 @@
   "nome_fantasia": "Lá na Roça",
   "whatsapp_pedidos": "5584991290653",
   "aceitar_pedido_online": true,
-  "aberto": true,
+  "aberto": false,
   "aceitando_pedidos": true,
-  "caixa_aberto": true,
+  "caixa_aberto": false,
   "delivery_ativo": true,
   "categorias": [
     {
@@ -178,7 +178,7 @@
     {
       "id": 2,
       "nome": "Entradas e Petiscos",
-      "ativo": true,
+      "ativo": false,
       "limite_acrescimos": null,
       "itens": [
         {
@@ -870,7 +870,7 @@
     {
       "id": 1,
       "nome": "Self-service",
-      "ativo": true,
+      "ativo": false,
       "limite_acrescimos": null,
       "itens": [
         {
@@ -986,7 +986,7 @@
     {
       "id": 37,
       "nome": "Pizzas",
-      "ativo": true,
+      "ativo": false,
       "limite_acrescimos": 2,
       "itens": [
         {
@@ -1114,7 +1114,7 @@
     {
       "id": 335,
       "nome": "PROMOÇÃO",
-      "ativo": true,
+      "ativo": false,
       "limite_acrescimos": null,
       "itens": [
         {
