@@ -1,9 +1,9 @@
 {
   "nome_fantasia": "Lá na Roça",
   "whatsapp_pedidos": "5584991290653",
-  "aceitar_pedido_online": true,
-  "aberto": true,
-  "aceitando_pedidos": true,
+  "aceitar_pedido_online": false,
+  "aberto": false,
+  "aceitando_pedidos": false,
   "caixa_aberto": true,
   "delivery_ativo": true,
   "categorias": [
@@ -90,7 +90,7 @@
           "tipo_venda": "unidade",
           "preco": 4.0,
           "descricao": "",
-          "ativo": 1,
+          "ativo": 0,
           "imagem_url": ""
         },
         {
@@ -700,6 +700,44 @@
       ]
     },
     {
+      "id": 335,
+      "nome": "PROMOÇÃO",
+      "ativo": true,
+      "limite_acrescimos": null,
+      "itens": [
+        {
+          "id": 358,
+          "nome": "HAMBURGUER ARTESANAL + BATATA FRITA",
+          "categoria": "PROMOÇÃO",
+          "tipo_venda": "unidade",
+          "preco": 0.0,
+          "descricao": "ESCOLHA O HAMBURGUER NA ABA DE  HAMBURGUER ARTESANAL, E ADICIONE A BATATA COMO ADICIONAL",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 360,
+          "nome": "HAMBURGUER ARTESANAL + REFRI LATA",
+          "categoria": "PROMOÇÃO",
+          "tipo_venda": "unidade",
+          "preco": 0.0,
+          "descricao": "PEÇA PELA ABA DOS HAMBURGUERES ARTESANAIS, E COLOQUE O REFRIGERANTE COMO ACRESCIMO",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 357,
+          "nome": "PIZZA G + REFRIGERANTE",
+          "categoria": "PROMOÇÃO",
+          "tipo_venda": "unidade",
+          "preco": 45.0,
+          "descricao": "PIZZA G = SABOR MODA DA CASA+ REFRIGERANTE DE 1 LITRO (DESCREVA O SABOR NA OBSERVAÇÃO)",
+          "ativo": 0,
+          "imagem_url": ""
+        }
+      ]
+    },
+    {
       "id": 24,
       "nome": "Pastelão",
       "ativo": true,
@@ -868,6 +906,124 @@
       ]
     },
     {
+      "id": 37,
+      "nome": "Pizzas",
+      "ativo": true,
+      "limite_acrescimos": 2,
+      "itens": [
+        {
+          "id": 449,
+          "nome": "+ Borda de Catupiry",
+          "categoria": "Pizzas",
+          "tipo_venda": "unidade",
+          "preco": 7.0,
+          "descricao": "Bordas de Catupity",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 448,
+          "nome": "+ Borda de Chocolate",
+          "categoria": "Pizzas",
+          "tipo_venda": "unidade",
+          "preco": 5.0,
+          "descricao": "Bodas de chocolate",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 354,
+          "nome": "+ Calabresa",
+          "categoria": "Pizzas",
+          "tipo_venda": "unidade",
+          "preco": 0.0,
+          "descricao": "muçarela, calabresa, cebola",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 353,
+          "nome": "+ Frango com Catupiry",
+          "categoria": "Pizzas",
+          "tipo_venda": "unidade",
+          "preco": 0.0,
+          "descricao": "muçarela, frango, catupiry",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 356,
+          "nome": "+ Moda da Casa",
+          "categoria": "Pizzas",
+          "tipo_venda": "unidade",
+          "preco": 0.0,
+          "descricao": "muçarela, calabresa, presunto, carne de sol, cebola, frango",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 352,
+          "nome": "+ Nordestina",
+          "categoria": "Pizzas",
+          "tipo_venda": "unidade",
+          "preco": 0.0,
+          "descricao": "muçarela, carne de sol, ovo, cebola",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 351,
+          "nome": "+ Portuguesa",
+          "categoria": "Pizzas",
+          "tipo_venda": "unidade",
+          "preco": 0.0,
+          "descricao": "muçarela, presunto, ovo, cebola",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 355,
+          "nome": "+ Sertaneja",
+          "categoria": "Pizzas",
+          "tipo_venda": "unidade",
+          "preco": 0.0,
+          "descricao": "muçarela, carne de sol, catupiry",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 456,
+          "nome": "Pizza G",
+          "categoria": "Pizzas",
+          "tipo_venda": "unidade",
+          "preco": 43.0,
+          "descricao": "Sabores: Portuguesa (muçarela, presunto, ovo, cebola) · Nordestina (muçarela, carne de sol, ovo, cebola) · Frango com Catupiry (muçarela, frango, catupiry) · Calabresa (muçarela, calabresa, cebola) · Sertaneja (muçarela, carne de sol, catupiry) · Moda da Casa (muçarela, calabresa, presunto, carne de sol, cebola, frango). Pode ser meio a meio.",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 457,
+          "nome": "Pizza M",
+          "categoria": "Pizzas",
+          "tipo_venda": "unidade",
+          "preco": 32.0,
+          "descricao": "Sabores: Portuguesa (muçarela, presunto, ovo, cebola) · Nordestina (muçarela, carne de sol, ovo, cebola) · Frango com Catupiry (muçarela, frango, catupiry) · Calabresa (muçarela, calabresa, cebola) · Sertaneja (muçarela, carne de sol, catupiry) · Moda da Casa (muçarela, calabresa, presunto, carne de sol, cebola, frango). Pode ser meio a meio.",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 458,
+          "nome": "Pizza P",
+          "categoria": "Pizzas",
+          "tipo_venda": "unidade",
+          "preco": 25.0,
+          "descricao": "Sabores: Portuguesa (muçarela, presunto, ovo, cebola) · Nordestina (muçarela, carne de sol, ovo, cebola) · Frango com Catupiry (muçarela, frango, catupiry) · Calabresa (muçarela, calabresa, cebola) · Sertaneja (muçarela, carne de sol, catupiry) · Moda da Casa (muçarela, calabresa, presunto, carne de sol, cebola, frango). Pode ser meio a meio.",
+          "ativo": 1,
+          "imagem_url": ""
+        }
+      ]
+    },
+    {
       "id": 1,
       "nome": "Self-service",
       "ativo": true,
@@ -982,174 +1138,8 @@
           "imagem_url": ""
         }
       ]
-    },
-    {
-      "id": 37,
-      "nome": "Pizzas",
-      "ativo": true,
-      "limite_acrescimos": 2,
-      "itens": [
-        {
-          "id": 354,
-          "nome": "+ Calabresa",
-          "categoria": "Pizzas",
-          "tipo_venda": "unidade",
-          "preco": 0.0,
-          "descricao": "muçarela, calabresa, cebola",
-          "ativo": 1,
-          "imagem_url": ""
-        },
-        {
-          "id": 353,
-          "nome": "+ Frango com Catupiry",
-          "categoria": "Pizzas",
-          "tipo_venda": "unidade",
-          "preco": 0.0,
-          "descricao": "muçarela, frango, catupiry",
-          "ativo": 1,
-          "imagem_url": ""
-        },
-        {
-          "id": 356,
-          "nome": "+ Moda da Casa",
-          "categoria": "Pizzas",
-          "tipo_venda": "unidade",
-          "preco": 0.0,
-          "descricao": "muçarela, calabresa, presunto, carne de sol, cebola, frango",
-          "ativo": 1,
-          "imagem_url": ""
-        },
-        {
-          "id": 352,
-          "nome": "+ Nordestina",
-          "categoria": "Pizzas",
-          "tipo_venda": "unidade",
-          "preco": 0.0,
-          "descricao": "muçarela, carne de sol, ovo, cebola",
-          "ativo": 1,
-          "imagem_url": ""
-        },
-        {
-          "id": 351,
-          "nome": "+ Portuguesa",
-          "categoria": "Pizzas",
-          "tipo_venda": "unidade",
-          "preco": 0.0,
-          "descricao": "muçarela, presunto, ovo, cebola",
-          "ativo": 1,
-          "imagem_url": ""
-        },
-        {
-          "id": 355,
-          "nome": "+ Sertaneja",
-          "categoria": "Pizzas",
-          "tipo_venda": "unidade",
-          "preco": 0.0,
-          "descricao": "muçarela, carne de sol, catupiry",
-          "ativo": 1,
-          "imagem_url": ""
-        },
-        {
-          "id": 42,
-          "nome": "Pizza G com borda",
-          "categoria": "Pizzas",
-          "tipo_venda": "unidade",
-          "preco": 48.0,
-          "descricao": "Sabores: Portuguesa (muçarela, presunto, ovo, cebola) · Nordestina (muçarela, carne de sol, ovo, cebola) · Frango com Catupiry (muçarela, frango, catupiry) · Calabresa (muçarela, calabresa, cebola) · Sertaneja (muçarela, carne de sol, catupiry) · Moda da Casa (muçarela, calabresa, presunto, carne de sol, cebola, frango). Pode ser meio a meio.",
-          "ativo": 1,
-          "imagem_url": ""
-        },
-        {
-          "id": 41,
-          "nome": "Pizza G sem borda",
-          "categoria": "Pizzas",
-          "tipo_venda": "unidade",
-          "preco": 43.0,
-          "descricao": "Sabores: Portuguesa (muçarela, presunto, ovo, cebola) · Nordestina (muçarela, carne de sol, ovo, cebola) · Frango com Catupiry (muçarela, frango, catupiry) · Calabresa (muçarela, calabresa, cebola) · Sertaneja (muçarela, carne de sol, catupiry) · Moda da Casa (muçarela, calabresa, presunto, carne de sol, cebola, frango). Pode ser meio a meio.",
-          "ativo": 1,
-          "imagem_url": ""
-        },
-        {
-          "id": 40,
-          "nome": "Pizza M com borda",
-          "categoria": "Pizzas",
-          "tipo_venda": "unidade",
-          "preco": 37.0,
-          "descricao": "Sabores: Portuguesa (muçarela, presunto, ovo, cebola) · Nordestina (muçarela, carne de sol, ovo, cebola) · Frango com Catupiry (muçarela, frango, catupiry) · Calabresa (muçarela, calabresa, cebola) · Sertaneja (muçarela, carne de sol, catupiry) · Moda da Casa (muçarela, calabresa, presunto, carne de sol, cebola, frango). Pode ser meio a meio.",
-          "ativo": 1,
-          "imagem_url": ""
-        },
-        {
-          "id": 39,
-          "nome": "Pizza M sem borda",
-          "categoria": "Pizzas",
-          "tipo_venda": "unidade",
-          "preco": 32.0,
-          "descricao": "Sabores: Portuguesa (muçarela, presunto, ovo, cebola) · Nordestina (muçarela, carne de sol, ovo, cebola) · Frango com Catupiry (muçarela, frango, catupiry) · Calabresa (muçarela, calabresa, cebola) · Sertaneja (muçarela, carne de sol, catupiry) · Moda da Casa (muçarela, calabresa, presunto, carne de sol, cebola, frango). Pode ser meio a meio.",
-          "ativo": 1,
-          "imagem_url": ""
-        },
-        {
-          "id": 38,
-          "nome": "Pizza P com borda",
-          "categoria": "Pizzas",
-          "tipo_venda": "unidade",
-          "preco": 27.0,
-          "descricao": "Sabores: Portuguesa (muçarela, presunto, ovo, cebola) · Nordestina (muçarela, carne de sol, ovo, cebola) · Frango com Catupiry (muçarela, frango, catupiry) · Calabresa (muçarela, calabresa, cebola) · Sertaneja (muçarela, carne de sol, catupiry) · Moda da Casa (muçarela, calabresa, presunto, carne de sol, cebola, frango). Pode ser meio a meio.",
-          "ativo": 1,
-          "imagem_url": ""
-        },
-        {
-          "id": 37,
-          "nome": "Pizza P sem borda",
-          "categoria": "Pizzas",
-          "tipo_venda": "unidade",
-          "preco": 25.0,
-          "descricao": "Sabores: Portuguesa (muçarela, presunto, ovo, cebola) · Nordestina (muçarela, carne de sol, ovo, cebola) · Frango com Catupiry (muçarela, frango, catupiry) · Calabresa (muçarela, calabresa, cebola) · Sertaneja (muçarela, carne de sol, catupiry) · Moda da Casa (muçarela, calabresa, presunto, carne de sol, cebola, frango). Pode ser meio a meio.",
-          "ativo": 1,
-          "imagem_url": ""
-        }
-      ]
-    },
-    {
-      "id": 335,
-      "nome": "PROMOÇÃO",
-      "ativo": false,
-      "limite_acrescimos": null,
-      "itens": [
-        {
-          "id": 358,
-          "nome": "HAMBURGUER ARTESANAL + BATATA FRITA",
-          "categoria": "PROMOÇÃO",
-          "tipo_venda": "unidade",
-          "preco": 0.0,
-          "descricao": "ESCOLHA O HAMBURGUER NA ABA DE  HAMBURGUER ARTESANAL, E ADICIONE A BATATA COMO ADICIONAL",
-          "ativo": 1,
-          "imagem_url": ""
-        },
-        {
-          "id": 360,
-          "nome": "HAMBURGUER ARTESANAL + REFRI LATA",
-          "categoria": "PROMOÇÃO",
-          "tipo_venda": "unidade",
-          "preco": 0.0,
-          "descricao": "PEÇA PELA ABA DOS HAMBURGUERES ARTESANAIS, E COLOQUE O REFRIGERANTE COMO ACRESCIMO",
-          "ativo": 1,
-          "imagem_url": ""
-        },
-        {
-          "id": 357,
-          "nome": "PIZZA G + REFRIGERANTE",
-          "categoria": "PROMOÇÃO",
-          "tipo_venda": "unidade",
-          "preco": 45.0,
-          "descricao": "PIZZA G = SABOR MODA DA CASA+ REFRIGERANTE DE 1 LITRO (DESCREVA O SABOR NA OBSERVAÇÃO)",
-          "ativo": 1,
-          "imagem_url": ""
-        }
-      ]
     }
   ],
-  "link_publico_ativo": true,
-  "link_publico_url": "https://poker-ware-eric-newport.trycloudflare.com"
+  "link_publico_ativo": false,
+  "link_publico_url": ""
 }
