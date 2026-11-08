@@ -1,9 +1,9 @@
 {
   "nome_fantasia": "Lá na Roça",
   "whatsapp_pedidos": "5584991290653",
-  "aceitar_pedido_online": true,
-  "aberto": true,
-  "aceitando_pedidos": true,
+  "aceitar_pedido_online": false,
+  "aberto": false,
+  "aceitando_pedidos": false,
   "caixa_aberto": true,
   "delivery_ativo": true,
   "categorias": [
@@ -1030,6 +1030,26 @@
       "limite_acrescimos": null,
       "itens": [
         {
+          "id": 470,
+          "nome": "ESTROGONOFE DE FRANFO ",
+          "categoria": "Self-service",
+          "tipo_venda": "unidade",
+          "preco": 18.0,
+          "descricao": "PORCAO DE ESTROGONOFE, BATATA FRITA, ARROZ E FAROFA",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 469,
+          "nome": "PANQUECA DE CARNE",
+          "categoria": "Self-service",
+          "tipo_venda": "unidade",
+          "preco": 15.0,
+          "descricao": "VAI ARROZ, BATATA FRITA, FAROFA",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
           "id": 1,
           "nome": "Self-service por peso",
           "categoria": "Self-service",
@@ -1140,6 +1160,6 @@
       ]
     }
   ],
-  "link_publico_ativo": true,
-  "link_publico_url": "https://subaru-components-vault-project.trycloudflare.com"
+  "link_publico_ativo": false,
+  "link_publico_url": ""
 }
