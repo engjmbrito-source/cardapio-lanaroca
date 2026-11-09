@@ -2,10 +2,10 @@
   "nome_fantasia": "Lá na Roça",
   "whatsapp_pedidos": "5584991290653",
   "aceitar_pedido_online": true,
-  "aberto": true,
+  "aberto": false,
   "aceitando_pedidos": true,
-  "caixa_aberto": true,
-  "delivery_ativo": true,
+  "caixa_aberto": false,
+  "delivery_ativo": false,
   "categorias": [
     {
       "id": 43,
@@ -216,7 +216,7 @@
     {
       "id": 185,
       "nome": "Hambúrgueres Artesanais",
-      "ativo": true,
+      "ativo": false,
       "limite_acrescimos": null,
       "itens": [
         {
@@ -524,7 +524,7 @@
     {
       "id": 168,
       "nome": "Hambúrgueres Simples",
-      "ativo": true,
+      "ativo": false,
       "limite_acrescimos": null,
       "itens": [
         {
@@ -702,7 +702,7 @@
     {
       "id": 335,
       "nome": "PROMOÇÃO",
-      "ativo": true,
+      "ativo": false,
       "limite_acrescimos": null,
       "itens": [
         {
@@ -908,7 +908,7 @@
     {
       "id": 37,
       "nome": "Pizzas",
-      "ativo": true,
+      "ativo": false,
       "limite_acrescimos": 2,
       "itens": [
         {
