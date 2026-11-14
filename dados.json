@@ -5,7 +5,7 @@
   "aberto": true,
   "aceitando_pedidos": true,
   "caixa_aberto": true,
-  "delivery_ativo": false,
+  "delivery_ativo": true,
   "categorias": [
     {
       "id": 43,
