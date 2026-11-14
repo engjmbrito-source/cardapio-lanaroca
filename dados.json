@@ -2,9 +2,9 @@
   "nome_fantasia": "Lá na Roça",
   "whatsapp_pedidos": "5584991290653",
   "aceitar_pedido_online": true,
-  "aberto": false,
+  "aberto": true,
   "aceitando_pedidos": true,
-  "caixa_aberto": false,
+  "caixa_aberto": true,
   "delivery_ativo": false,
   "categorias": [
     {
@@ -216,7 +216,7 @@
     {
       "id": 185,
       "nome": "Hambúrgueres Artesanais",
-      "ativo": false,
+      "ativo": true,
       "limite_acrescimos": null,
       "itens": [
         {
@@ -524,7 +524,7 @@
     {
       "id": 168,
       "nome": "Hambúrgueres Simples",
-      "ativo": false,
+      "ativo": true,
       "limite_acrescimos": null,
       "itens": [
         {
@@ -700,44 +700,6 @@
       ]
     },
     {
-      "id": 335,
-      "nome": "PROMOÇÃO",
-      "ativo": false,
-      "limite_acrescimos": null,
-      "itens": [
-        {
-          "id": 358,
-          "nome": "HAMBURGUER ARTESANAL + BATATA FRITA",
-          "categoria": "PROMOÇÃO",
-          "tipo_venda": "unidade",
-          "preco": 0.0,
-          "descricao": "ESCOLHA O HAMBURGUER NA ABA DE  HAMBURGUER ARTESANAL, E ADICIONE A BATATA COMO ADICIONAL",
-          "ativo": 1,
-          "imagem_url": ""
-        },
-        {
-          "id": 360,
-          "nome": "HAMBURGUER ARTESANAL + REFRI LATA",
-          "categoria": "PROMOÇÃO",
-          "tipo_venda": "unidade",
-          "preco": 0.0,
-          "descricao": "PEÇA PELA ABA DOS HAMBURGUERES ARTESANAIS, E COLOQUE O REFRIGERANTE COMO ACRESCIMO",
-          "ativo": 1,
-          "imagem_url": ""
-        },
-        {
-          "id": 357,
-          "nome": "PIZZA G + REFRIGERANTE",
-          "categoria": "PROMOÇÃO",
-          "tipo_venda": "unidade",
-          "preco": 45.0,
-          "descricao": "PIZZA G = SABOR MODA DA CASA+ REFRIGERANTE DE 1 LITRO (DESCREVA O SABOR NA OBSERVAÇÃO)",
-          "ativo": 0,
-          "imagem_url": ""
-        }
-      ]
-    },
-    {
       "id": 24,
       "nome": "Pastelão",
       "ativo": true,
@@ -908,7 +870,7 @@
     {
       "id": 37,
       "nome": "Pizzas",
-      "ativo": false,
+      "ativo": true,
       "limite_acrescimos": 2,
       "itens": [
         {
@@ -1024,15 +986,55 @@
       ]
     },
     {
-      "id": 1,
-      "nome": "Self-service",
+      "id": 535,
+      "nome": "Prato Feito (PF) e Porções",
       "ativo": true,
       "limite_acrescimos": null,
       "itens": [
         {
-          "id": 470,
-          "nome": "ESTROGONOFE DE FRANFO ",
-          "categoria": "Self-service",
+          "id": 567,
+          "nome": "BIFE DE CARNE A PARMEGIANA (1 PESSOA)",
+          "categoria": "Prato Feito (PF) e Porções",
+          "tipo_venda": "unidade",
+          "preco": 23.0,
+          "descricao": "file, fettuccine, molho de tomate caseiro, queijo gratinado, batata palha",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 568,
+          "nome": "BIFE DE CARNE A PARMEGIANA (2 PESSOA)",
+          "categoria": "Prato Feito (PF) e Porções",
+          "tipo_venda": "unidade",
+          "preco": 41.0,
+          "descricao": "2 file, fettuccine, molho de tomate caseiro, queijo gratinado, batata palha",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 569,
+          "nome": "BIFE DE CARNE A PARMEGIANA (3 PESSOAS)",
+          "categoria": "Prato Feito (PF) e Porções",
+          "tipo_venda": "unidade",
+          "preco": 60.0,
+          "descricao": "3 file, fettuccine, molho de tomate caseiro, queijo gratinado, batata palha",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 570,
+          "nome": "BIFE DE CARNE A PARMEGIANA (4 PESSOAS)",
+          "categoria": "Prato Feito (PF) e Porções",
+          "tipo_venda": "unidade",
+          "preco": 82.0,
+          "descricao": "4 file, fettuccine, molho de tomate caseiro, queijo gratinado, batata palha",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 565,
+          "nome": "ESTROGONOFE DE FRANFO",
+          "categoria": "Prato Feito (PF) e Porções",
           "tipo_venda": "unidade",
           "preco": 18.0,
           "descricao": "PORCAO DE ESTROGONOFE, BATATA FRITA, ARROZ E FAROFA",
@@ -1040,15 +1042,23 @@
           "imagem_url": ""
         },
         {
-          "id": 469,
+          "id": 566,
           "nome": "PANQUECA DE CARNE",
-          "categoria": "Self-service",
+          "categoria": "Prato Feito (PF) e Porções",
           "tipo_venda": "unidade",
           "preco": 15.0,
           "descricao": "VAI ARROZ, BATATA FRITA, FAROFA",
           "ativo": 1,
           "imagem_url": ""
-        },
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "nome": "Self-service",
+      "ativo": false,
+      "limite_acrescimos": null,
+      "itens": [
         {
           "id": 1,
           "nome": "Self-service por peso",
