@@ -1,10 +1,10 @@
 {
   "nome_fantasia": "Lá na Roça",
   "whatsapp_pedidos": "5584991290653",
-  "aceitar_pedido_online": true,
-  "aberto": true,
-  "aceitando_pedidos": true,
-  "caixa_aberto": true,
+  "aceitar_pedido_online": false,
+  "aberto": false,
+  "aceitando_pedidos": false,
+  "caixa_aberto": false,
   "delivery_ativo": true,
   "categorias": [
     {
@@ -992,6 +992,16 @@
       "limite_acrescimos": null,
       "itens": [
         {
+          "id": 564,
+          "nome": "+ SALADA/VERDURA",
+          "categoria": "Prato Feito (PF) e Porções",
+          "tipo_venda": "unidade",
+          "preco": 5.0,
+          "descricao": "",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
           "id": 567,
           "nome": "BIFE DE CARNE A PARMEGIANA (1 PESSOA)",
           "categoria": "Prato Feito (PF) e Porções",
@@ -1170,6 +1180,6 @@
       ]
     }
   ],
-  "link_publico_ativo": true,
-  "link_publico_url": "https://laugh-devon-recorded-mandatory.trycloudflare.com"
+  "link_publico_ativo": false,
+  "link_publico_url": ""
 }
