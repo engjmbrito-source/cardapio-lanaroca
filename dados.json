@@ -1,11 +1,11 @@
 {
   "nome_fantasia": "Lá na Roça",
   "whatsapp_pedidos": "5584991290653",
-  "aceitar_pedido_online": false,
-  "aberto": false,
-  "aceitando_pedidos": false,
+  "aceitar_pedido_online": true,
+  "aberto": true,
+  "aceitando_pedidos": true,
   "caixa_aberto": true,
-  "delivery_ativo": true,
+  "delivery_ativo": false,
   "categorias": [
     {
       "id": 43,
@@ -13,6 +13,16 @@
       "ativo": true,
       "limite_acrescimos": null,
       "itens": [
+        {
+          "id": 581,
+          "nome": "AGUA",
+          "categoria": "Bebidas",
+          "tipo_venda": "unidade",
+          "preco": 3.0,
+          "descricao": "",
+          "ativo": 1,
+          "imagem_url": ""
+        },
         {
           "id": 52,
           "nome": "Burrinha Caranguejo Prata (275 ml)",
@@ -158,7 +168,7 @@
           "nome": "Água Mineral (500 ml)",
           "categoria": "Bebidas",
           "tipo_venda": "unidade",
-          "preco": 4.0,
+          "preco": 3.0,
           "descricao": "",
           "ativo": 1,
           "imagem_url": ""
@@ -178,7 +188,7 @@
     {
       "id": 2,
       "nome": "Entradas e Petiscos",
-      "ativo": true,
+      "ativo": false,
       "limite_acrescimos": null,
       "itens": [
         {
@@ -880,7 +890,7 @@
           "tipo_venda": "unidade",
           "preco": 7.0,
           "descricao": "Bordas de Catupity",
-          "ativo": 1,
+          "ativo": 0,
           "imagem_url": ""
         },
         {
@@ -890,7 +900,7 @@
           "tipo_venda": "unidade",
           "preco": 5.0,
           "descricao": "Bodas de chocolate",
-          "ativo": 1,
+          "ativo": 0,
           "imagem_url": ""
         },
         {
@@ -900,7 +910,7 @@
           "tipo_venda": "unidade",
           "preco": 0.0,
           "descricao": "muçarela, calabresa, cebola",
-          "ativo": 1,
+          "ativo": 0,
           "imagem_url": ""
         },
         {
@@ -910,7 +920,7 @@
           "tipo_venda": "unidade",
           "preco": 0.0,
           "descricao": "muçarela, frango, catupiry",
-          "ativo": 1,
+          "ativo": 0,
           "imagem_url": ""
         },
         {
@@ -920,7 +930,7 @@
           "tipo_venda": "unidade",
           "preco": 0.0,
           "descricao": "muçarela, calabresa, presunto, carne de sol, cebola, frango",
-          "ativo": 1,
+          "ativo": 0,
           "imagem_url": ""
         },
         {
@@ -930,7 +940,7 @@
           "tipo_venda": "unidade",
           "preco": 0.0,
           "descricao": "muçarela, carne de sol, ovo, cebola",
-          "ativo": 1,
+          "ativo": 0,
           "imagem_url": ""
         },
         {
@@ -940,7 +950,7 @@
           "tipo_venda": "unidade",
           "preco": 0.0,
           "descricao": "muçarela, presunto, ovo, cebola",
-          "ativo": 1,
+          "ativo": 0,
           "imagem_url": ""
         },
         {
@@ -950,6 +960,16 @@
           "tipo_venda": "unidade",
           "preco": 0.0,
           "descricao": "muçarela, carne de sol, catupiry",
+          "ativo": 0,
+          "imagem_url": ""
+        },
+        {
+          "id": 582,
+          "nome": "Mini Pizza",
+          "categoria": "Pizzas",
+          "tipo_venda": "unidade",
+          "preco": 7.99,
+          "descricao": "",
           "ativo": 1,
           "imagem_url": ""
         },
@@ -960,7 +980,7 @@
           "tipo_venda": "unidade",
           "preco": 43.0,
           "descricao": "Sabores: Portuguesa (muçarela, presunto, ovo, cebola) · Nordestina (muçarela, carne de sol, ovo, cebola) · Frango com Catupiry (muçarela, frango, catupiry) · Calabresa (muçarela, calabresa, cebola) · Sertaneja (muçarela, carne de sol, catupiry) · Moda da Casa (muçarela, calabresa, presunto, carne de sol, cebola, frango). Pode ser meio a meio.",
-          "ativo": 1,
+          "ativo": 0,
           "imagem_url": ""
         },
         {
@@ -970,7 +990,7 @@
           "tipo_venda": "unidade",
           "preco": 32.0,
           "descricao": "Sabores: Portuguesa (muçarela, presunto, ovo, cebola) · Nordestina (muçarela, carne de sol, ovo, cebola) · Frango com Catupiry (muçarela, frango, catupiry) · Calabresa (muçarela, calabresa, cebola) · Sertaneja (muçarela, carne de sol, catupiry) · Moda da Casa (muçarela, calabresa, presunto, carne de sol, cebola, frango). Pode ser meio a meio.",
-          "ativo": 1,
+          "ativo": 0,
           "imagem_url": ""
         },
         {
@@ -980,7 +1000,7 @@
           "tipo_venda": "unidade",
           "preco": 25.0,
           "descricao": "Sabores: Portuguesa (muçarela, presunto, ovo, cebola) · Nordestina (muçarela, carne de sol, ovo, cebola) · Frango com Catupiry (muçarela, frango, catupiry) · Calabresa (muçarela, calabresa, cebola) · Sertaneja (muçarela, carne de sol, catupiry) · Moda da Casa (muçarela, calabresa, presunto, carne de sol, cebola, frango). Pode ser meio a meio.",
-          "ativo": 1,
+          "ativo": 0,
           "imagem_url": ""
         }
       ]
@@ -988,7 +1008,7 @@
     {
       "id": 535,
       "nome": "Prato Feito (PF) e Porções",
-      "ativo": true,
+      "ativo": false,
       "limite_acrescimos": null,
       "itens": [
         {
@@ -1180,6 +1200,6 @@
       ]
     }
   ],
-  "link_publico_ativo": false,
-  "link_publico_url": ""
+  "link_publico_ativo": true,
+  "link_publico_url": "https://technological-earrings-speeches-brakes.trycloudflare.com"
 }
