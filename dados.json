@@ -14,11 +14,21 @@
       "limite_acrescimos": null,
       "itens": [
         {
-          "id": 581,
-          "nome": "AGUA",
+          "id": 584,
+          "nome": "Agua 500ml",
           "categoria": "Bebidas",
           "tipo_venda": "unidade",
           "preco": 3.0,
+          "descricao": "",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 597,
+          "nome": "Agua de Coco",
+          "categoria": "Bebidas",
+          "tipo_venda": "unidade",
+          "preco": 6.0,
           "descricao": "",
           "ativo": 1,
           "imagem_url": ""
@@ -44,8 +54,8 @@
           "imagem_url": ""
         },
         {
-          "id": 56,
-          "nome": "Cerveja Brahma (300 ml)",
+          "id": 588,
+          "nome": "Cerveja Brahma 300 ml",
           "categoria": "Bebidas",
           "tipo_venda": "unidade",
           "preco": 5.0,
@@ -54,11 +64,31 @@
           "imagem_url": ""
         },
         {
-          "id": 57,
-          "nome": "Cerveja Budweiser (600 ml)",
+          "id": 587,
+          "nome": "Cerveja Brahma 600 ml",
+          "categoria": "Bebidas",
+          "tipo_venda": "unidade",
+          "preco": 10.0,
+          "descricao": "",
+          "ativo": 0,
+          "imagem_url": ""
+        },
+        {
+          "id": 589,
+          "nome": "Cerveja Budweiser 600 ml",
           "categoria": "Bebidas",
           "tipo_venda": "unidade",
           "preco": 12.0,
+          "descricao": "",
+          "ativo": 0,
+          "imagem_url": ""
+        },
+        {
+          "id": 591,
+          "nome": "Cerveja Skol 300ml",
+          "categoria": "Bebidas",
+          "tipo_venda": "unidade",
+          "preco": 5.0,
           "descricao": "",
           "ativo": 0,
           "imagem_url": ""
@@ -71,16 +101,6 @@
           "preco": 10.0,
           "descricao": "",
           "ativo": 1,
-          "imagem_url": ""
-        },
-        {
-          "id": 136,
-          "nome": "Dose Ballantine’s (Whisky)",
-          "categoria": "Bebidas",
-          "tipo_venda": "unidade",
-          "preco": 10.0,
-          "descricao": "",
-          "ativo": 0,
           "imagem_url": ""
         },
         {
@@ -101,16 +121,6 @@
           "preco": 8.0,
           "descricao": "",
           "ativo": 1,
-          "imagem_url": ""
-        },
-        {
-          "id": 359,
-          "nome": "LATA PROMOCAO",
-          "categoria": "Bebidas",
-          "tipo_venda": "unidade",
-          "preco": 4.0,
-          "descricao": "",
-          "ativo": 0,
           "imagem_url": ""
         },
         {
@@ -240,16 +250,6 @@
       "limite_acrescimos": null,
       "itens": [
         {
-          "id": 361,
-          "nome": "+ BATATA",
-          "categoria": "Hambúrgueres Artesanais",
-          "tipo_venda": "unidade",
-          "preco": 0.0,
-          "descricao": "",
-          "ativo": 1,
-          "imagem_url": ""
-        },
-        {
           "id": 210,
           "nome": "+ Bacon",
           "categoria": "Hambúrgueres Artesanais",
@@ -265,6 +265,16 @@
           "categoria": "Hambúrgueres Artesanais",
           "tipo_venda": "unidade",
           "preco": 2.0,
+          "descricao": "",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
+          "id": 606,
+          "nome": "+ Bata Frita Individual",
+          "categoria": "Hambúrgueres Artesanais",
+          "tipo_venda": "unidade",
+          "preco": 0.0,
           "descricao": "",
           "ativo": 1,
           "imagem_url": ""
@@ -568,6 +578,16 @@
           "imagem_url": ""
         },
         {
+          "id": 636,
+          "nome": "+ Batata Frita individual",
+          "categoria": "Hambúrgueres Simples",
+          "tipo_venda": "unidade",
+          "preco": 8.0,
+          "descricao": "",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
           "id": 201,
           "nome": "+ Carne na nata (100 g)",
           "categoria": "Hambúrgueres Simples",
@@ -722,7 +742,7 @@
     {
       "id": 24,
       "nome": "Pastelão",
-      "ativo": true,
+      "ativo": false,
       "limite_acrescimos": null,
       "itens": [
         {
@@ -979,7 +999,7 @@
           "categoria": "Pizzas",
           "tipo_venda": "unidade",
           "preco": 7.99,
-          "descricao": "",
+          "descricao": "Sabores: Portuguesa (muçarela, presunto, ovo, cebola) · Nordestina (muçarela, carne de sol, ovo, cebola) · Frango com Catupiry (muçarela, frango, catupiry) · Calabresa (muçarela, calabresa, cebola) · Sertaneja (muçarela, carne de sol, catupiry) · Moda da Casa (muçarela, calabresa, presunto, carne de sol, cebola, frango). Pode ser meio a meio.",
           "ativo": 0,
           "imagem_url": ""
         },
@@ -1076,7 +1096,7 @@
           "nome": "ESTROGONOFE DE FRANFO",
           "categoria": "Prato Feito (PF) e Porções",
           "tipo_venda": "unidade",
-          "preco": 18.0,
+          "preco": 19.0,
           "descricao": "PORCAO DE ESTROGONOFE, BATATA FRITA, ARROZ E FAROFA",
           "ativo": 1,
           "imagem_url": ""
@@ -1106,7 +1126,7 @@
           "tipo_venda": "peso",
           "preco": 69.99,
           "descricao": "Monte seu prato do seu jeito e aproveite o sabor da roça! Servido por peso, com preço variável — consulte o valor do dia.",
-          "ativo": 0,
+          "ativo": 1,
           "imagem_url": ""
         }
       ]
