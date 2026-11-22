@@ -1,11 +1,11 @@
 {
   "nome_fantasia": "Lá na Roça",
   "whatsapp_pedidos": "5584991290653",
-  "aceitar_pedido_online": true,
-  "aberto": true,
-  "aceitando_pedidos": true,
+  "aceitar_pedido_online": false,
+  "aberto": false,
+  "aceitando_pedidos": false,
   "caixa_aberto": true,
-  "delivery_ativo": false,
+  "delivery_ativo": true,
   "categorias": [
     {
       "id": 43,
@@ -44,18 +44,28 @@
           "imagem_url": ""
         },
         {
+          "id": 56,
+          "nome": "Cerveja Brahma (300 ml)",
+          "categoria": "Bebidas",
+          "tipo_venda": "unidade",
+          "preco": 5.0,
+          "descricao": "",
+          "ativo": 1,
+          "imagem_url": ""
+        },
+        {
           "id": 57,
           "nome": "Cerveja Budweiser (600 ml)",
           "categoria": "Bebidas",
           "tipo_venda": "unidade",
           "preco": 12.0,
           "descricao": "",
-          "ativo": 1,
+          "ativo": 0,
           "imagem_url": ""
         },
         {
-          "id": 56,
-          "nome": "Cerveja Skol ou Brahma (600 ml)",
+          "id": 583,
+          "nome": "Cerveja Skol 600ml",
           "categoria": "Bebidas",
           "tipo_venda": "unidade",
           "preco": 10.0,
@@ -188,7 +198,7 @@
     {
       "id": 2,
       "nome": "Entradas e Petiscos",
-      "ativo": false,
+      "ativo": true,
       "limite_acrescimos": null,
       "itens": [
         {
@@ -890,7 +900,7 @@
           "tipo_venda": "unidade",
           "preco": 7.0,
           "descricao": "Bordas de Catupity",
-          "ativo": 0,
+          "ativo": 1,
           "imagem_url": ""
         },
         {
@@ -900,7 +910,7 @@
           "tipo_venda": "unidade",
           "preco": 5.0,
           "descricao": "Bodas de chocolate",
-          "ativo": 0,
+          "ativo": 1,
           "imagem_url": ""
         },
         {
@@ -910,7 +920,7 @@
           "tipo_venda": "unidade",
           "preco": 0.0,
           "descricao": "muçarela, calabresa, cebola",
-          "ativo": 0,
+          "ativo": 1,
           "imagem_url": ""
         },
         {
@@ -920,7 +930,7 @@
           "tipo_venda": "unidade",
           "preco": 0.0,
           "descricao": "muçarela, frango, catupiry",
-          "ativo": 0,
+          "ativo": 1,
           "imagem_url": ""
         },
         {
@@ -930,7 +940,7 @@
           "tipo_venda": "unidade",
           "preco": 0.0,
           "descricao": "muçarela, calabresa, presunto, carne de sol, cebola, frango",
-          "ativo": 0,
+          "ativo": 1,
           "imagem_url": ""
         },
         {
@@ -940,7 +950,7 @@
           "tipo_venda": "unidade",
           "preco": 0.0,
           "descricao": "muçarela, carne de sol, ovo, cebola",
-          "ativo": 0,
+          "ativo": 1,
           "imagem_url": ""
         },
         {
@@ -950,7 +960,7 @@
           "tipo_venda": "unidade",
           "preco": 0.0,
           "descricao": "muçarela, presunto, ovo, cebola",
-          "ativo": 0,
+          "ativo": 1,
           "imagem_url": ""
         },
         {
@@ -960,7 +970,7 @@
           "tipo_venda": "unidade",
           "preco": 0.0,
           "descricao": "muçarela, carne de sol, catupiry",
-          "ativo": 0,
+          "ativo": 1,
           "imagem_url": ""
         },
         {
@@ -970,7 +980,7 @@
           "tipo_venda": "unidade",
           "preco": 7.99,
           "descricao": "",
-          "ativo": 1,
+          "ativo": 0,
           "imagem_url": ""
         },
         {
@@ -980,7 +990,7 @@
           "tipo_venda": "unidade",
           "preco": 43.0,
           "descricao": "Sabores: Portuguesa (muçarela, presunto, ovo, cebola) · Nordestina (muçarela, carne de sol, ovo, cebola) · Frango com Catupiry (muçarela, frango, catupiry) · Calabresa (muçarela, calabresa, cebola) · Sertaneja (muçarela, carne de sol, catupiry) · Moda da Casa (muçarela, calabresa, presunto, carne de sol, cebola, frango). Pode ser meio a meio.",
-          "ativo": 0,
+          "ativo": 1,
           "imagem_url": ""
         },
         {
@@ -990,7 +1000,7 @@
           "tipo_venda": "unidade",
           "preco": 32.0,
           "descricao": "Sabores: Portuguesa (muçarela, presunto, ovo, cebola) · Nordestina (muçarela, carne de sol, ovo, cebola) · Frango com Catupiry (muçarela, frango, catupiry) · Calabresa (muçarela, calabresa, cebola) · Sertaneja (muçarela, carne de sol, catupiry) · Moda da Casa (muçarela, calabresa, presunto, carne de sol, cebola, frango). Pode ser meio a meio.",
-          "ativo": 0,
+          "ativo": 1,
           "imagem_url": ""
         },
         {
@@ -1000,7 +1010,7 @@
           "tipo_venda": "unidade",
           "preco": 25.0,
           "descricao": "Sabores: Portuguesa (muçarela, presunto, ovo, cebola) · Nordestina (muçarela, carne de sol, ovo, cebola) · Frango com Catupiry (muçarela, frango, catupiry) · Calabresa (muçarela, calabresa, cebola) · Sertaneja (muçarela, carne de sol, catupiry) · Moda da Casa (muçarela, calabresa, presunto, carne de sol, cebola, frango). Pode ser meio a meio.",
-          "ativo": 0,
+          "ativo": 1,
           "imagem_url": ""
         }
       ]
@@ -1008,7 +1018,7 @@
     {
       "id": 535,
       "nome": "Prato Feito (PF) e Porções",
-      "ativo": false,
+      "ativo": true,
       "limite_acrescimos": null,
       "itens": [
         {
@@ -1200,6 +1210,6 @@
       ]
     }
   ],
-  "link_publico_ativo": true,
-  "link_publico_url": "https://shareware-chest-gba-nextel.trycloudflare.com"
+  "link_publico_ativo": false,
+  "link_publico_url": ""
 }
